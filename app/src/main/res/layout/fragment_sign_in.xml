@@ -26,9 +26,7 @@
                 android:id="@+id/imageView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:padding="25dp"
-                android:layout_marginRight="10dp"
+                android:padding="40dp"
                 android:adjustViewBounds="true"
                 android:src="@drawable/login"
 
@@ -139,6 +137,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:id="@+id/remenbercheckbox"
                     android:fontFamily="@font/bengali"
                     android:text="পাসওয়ার্ড মনে রাখুন"
                     app:buttonTint="#5B9B06" />
@@ -169,6 +168,7 @@
                 android:background="#860DB2"
                 android:fontFamily="@font/bengali"
                 android:text="লগইন "
+                android:id="@+id/loginBtn"
                 android:textColor="#FFFFFF"
                 android:textSize="20dp"
                 android:textStyle="bold"

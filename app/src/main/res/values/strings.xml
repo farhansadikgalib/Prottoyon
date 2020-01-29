@@ -4,8 +4,11 @@
     <string name="mobileNoBangla">মোবাইল নাম্বার</string>
     <string name="passwordBangla">পাসওয়ার্ড</string>
     <string name="rememberPassword">পাসওয়ার্ড মনে রাখুন</string>
-    <string name ="forgetPasswordBangla">পাসওয়ার্ড ভুলে গেছি?</string>
+    <string name="forgetPasswordBangla">পাসওয়ার্ড ভুলে গেছি?</string>
     <string name="LogIn">লগইন</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
