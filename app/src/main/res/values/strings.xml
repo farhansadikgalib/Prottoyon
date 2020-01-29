@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Prottoyon</string>
+
+    <string name="mobileNoBangla">মোবাইল নাম্বার</string>
+    <string name="passwordBangla">পাসওয়ার্ড</string>
+    <string name="rememberPassword">পাসওয়ার্ড মনে রাখুন</string>
+    <string name ="forgetPasswordBangla">পাসওয়ার্ড ভুলে গেছি?</string>
+    <string name="LogIn">লগইন</string>
+
+
 </resources>
