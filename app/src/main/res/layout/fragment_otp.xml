@@ -41,7 +41,7 @@
        android:layout_marginLeft="30dp"
        app:itemSpacing="5dp"
        android:inputType="number"
-       android:itemBackground="#4CAF50"
+       android:itemBackground="@color/colorPrimary"
        android:id="@+id/pinView"
        android:padding="10dp"
        style="@style/PinWidget.PinView"
