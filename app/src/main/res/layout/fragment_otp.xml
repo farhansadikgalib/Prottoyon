@@ -35,22 +35,20 @@
         />
 
 
-   <com.chaos.view.PinView
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:layout_marginLeft="30dp"
-       app:itemSpacing="5dp"
-       android:inputType="number"
-       android:itemBackground="@color/colorPrimary"
-       android:id="@+id/pinView"
-       android:padding="10dp"
-       style="@style/PinWidget.PinView"
-       app:itemCount="6"
-       app:itemRadius="10dp"
-       app:itemHeight="35dp"
-       app:itemWidth="42dp"/>
 
 
+
+    <com.mukesh.OtpView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        app:itemSpacing="5dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/pinView"
+        android:padding="10dp"
+        app:itemCount="6"
+        app:itemRadius="10dp"
+        android:itemBackground="@color/colorPrimary"/>
 
     <TextView
         android:id="@+id/textView2"
