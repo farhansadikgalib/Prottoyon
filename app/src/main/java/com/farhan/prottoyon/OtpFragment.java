@@ -13,7 +13,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 
-import com.chaos.view.PinView;
 
 
 /**
@@ -26,7 +25,7 @@ public class OtpFragment extends Fragment {
         // Required empty public constructor
     }
 
-    private PinView otpET;
+   // private PinView otpET;
     private Button otpSubmitBtn;
     private FrameLayout parentFrameLayout;
     @Override
@@ -35,7 +34,7 @@ public class OtpFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_otp, container, false);
 
-        otpET =view.findViewById(R.id.pinView);
+       // otpET =view.findViewById(R.id.pinView);
         otpSubmitBtn = view.findViewById(R.id.otpSubmitBtn);
         parentFrameLayout = getActivity().findViewById(R.id.registration_framelayout);
 

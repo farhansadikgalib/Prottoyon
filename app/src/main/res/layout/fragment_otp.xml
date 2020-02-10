@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".OtpFragment">
 
@@ -13,14 +13,12 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/otp"
         android:adjustViewBounds="true"
         android:padding="50dp"
-        />
+        android:src="@drawable/otp" />
 
     <TextView
         android:id="@+id/textView"
-        android:textStyle="bold"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
@@ -32,24 +30,31 @@
         android:text="সিকিউরিটি কোড"
         android:textColor="#000000"
         android:textSize="22dp"
+        android:textStyle="bold" />
+
+
+    <com.chaos.view.PinView
+        android:id="@+id/pinView"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textSize="18sp"
+        app:itemCount="4"
+        app:itemHeight="48dp"
+        app:itemRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lineColor="@android:color/darker_gray"
+        app:viewType="rectangle"
+        android:itemBackground="@color/colorPrimary"
         />
-
-
-   <com.chaos.view.PinView
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:layout_marginLeft="30dp"
-       app:itemSpacing="5dp"
-       android:inputType="number"
-       android:itemBackground="@color/colorPrimary"
-       android:id="@+id/pinView"
-       android:padding="10dp"
-       style="@style/PinWidget.PinView"
-       app:itemCount="6"
-       app:itemRadius="10dp"
-       app:itemHeight="35dp"
-       app:itemWidth="42dp"/>
-
 
 
     <TextView
@@ -66,11 +71,11 @@
 করা হয়েছে।"
 
         android:textColor="#000000"
-        android:textSize="20dp"
-        />
+        android:textSize="20dp" />
 
 
     <Button
+        android:id="@+id/otpSubmitBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
@@ -79,11 +84,9 @@
         android:background="#860DB2"
         android:fontFamily="@font/bengali"
         android:text="সাবমিট "
-        android:id="@+id/otpSubmitBtn"
         android:textColor="#FFFFFF"
         android:textSize="20dp"
         android:textStyle="bold" />
-
 
 
 </LinearLayout>
