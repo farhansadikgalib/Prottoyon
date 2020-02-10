@@ -210,20 +210,30 @@
 
 
     </androidx.core.widget.NestedScrollView>
+
     <GridView
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/gridview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:numColumns="2"
-        android:verticalSpacing="10dp"
         android:layout_below="@id/linear"
-        android:horizontalSpacing="10dp"
-        android:stretchMode="columnWidth"
         android:gravity="center"
-        >
+        android:horizontalSpacing="10dp"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp">
 
     </GridView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gridview"
+        android:layout_alignBottom="@id/gridview"
+        android:src="@drawable/ict">
+
+    </ImageView>
+
+
 
 
 </RelativeLayout>
