@@ -25,7 +25,7 @@ public class OtpFragment extends Fragment {
         // Required empty public constructor
     }
 
-    //private PinView otpET;
+ //   private PinView otpET;
     private Button otpSubmitBtn;
     private FrameLayout parentFrameLayout;
     @Override
