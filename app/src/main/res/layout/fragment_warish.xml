@@ -751,7 +751,6 @@
                         android:paddingRight="20sp"
                         android:background="#FBFBFB"
                         android:paddingBottom="15sp"
-
                         >
 
                         <TextView
