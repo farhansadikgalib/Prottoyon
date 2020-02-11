@@ -784,6 +784,15 @@
 
             </androidx.cardview.widget.CardView>
 
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="10sp"
+                android:layout_marginBottom="10dp"
+                android:background="#8CC63F" />
+
         </LinearLayout>
+
+
+
     </ScrollView>
 </LinearLayout>
