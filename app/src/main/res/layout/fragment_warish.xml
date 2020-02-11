@@ -192,7 +192,17 @@
                                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                                 android:textColor="@color/grey_text" />
 
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:weightSum="5"
+                                >
+
                             <TextView
+
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_gravity="center"
@@ -200,10 +210,25 @@
                                 android:background="@color/grey"
                                 android:fontFamily="@font/bengali"
                                 android:text="০৮ জানুয়ারি ২০০৫"
-
                                 android:gravity="center"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                                 android:textColor="#111111" />
+
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="4"
+                                    android:src="@drawable/date_warish"
+                                    android:background="#E0E0E0"
+                                    >
+
+
+                                </ImageView>
+
+
+
+                            </LinearLayout>
 
 
                         </LinearLayout>
