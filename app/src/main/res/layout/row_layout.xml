@@ -37,7 +37,8 @@
                 android:textColor="#067CAF"
                 android:textSize="20sp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"/>
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"/>
 
             <TextView
                 android:id="@+id/applicantionTV"
@@ -61,7 +62,7 @@
                 android:text="আবেদন আই ডিঃ ৫০২৬৫২১৫২০"
                 android:layout_marginLeft="10dp"
                 android:gravity="center"
-                android:layout_marginTop=""/>
+                android:layout_marginTop="10dp"/>
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

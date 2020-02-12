@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ApplicantsDescriptionFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_height="match_parent"
+    <ScrollView
         android:layout_width="match_parent"
-        xmlns:android="http://schemas.android.com/apk/res/android" >
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="58dp">
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -22,84 +26,87 @@
                 android:id="@+id/imageCard"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginTop="40dp"
-                app:cardCornerRadius="5dp"
                 android:layout_marginLeft="20dp"
-                android:backgroundTint="#555555"/>
+                android:layout_marginTop="40dp"
+                android:backgroundTint="#555555"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/ic_launcher"/>
+            </androidx.cardview.widget.CardView>
 
             <TextView
                 android:id="@+id/nameTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+
                 android:text="আব্দুল হালিম"
                 android:textColor="#DD0F0F0F"
-
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginTop="30dp"
                 android:textSize="25sp"
                 android:textStyle="bold"
-                android:layout_marginRight="20dp"
-                app:layout_constraintRight_toRightOf="parent"/>
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
 
             <TextView
                 android:id="@+id/mobileNumberTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+
                 android:text="০১৭১২৩৪৫৬৭৮"
                 android:textColor="#DD0F0F0F"
 
-                app:layout_constraintTop_toBottomOf="@id/nameTV"
                 android:textSize="20sp"
-
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="5dp"
-                app:layout_constraintRight_toRightOf="parent"/>
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/nameTV" />
 
             <TextView
                 android:id="@+id/idOfApplicants"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+
                 android:text="NID: 199000000555555555555"
                 android:textColor="#DD0F0F0F"
 
-                app:layout_constraintTop_toBottomOf="@id/mobileNumberTV"
                 android:textSize="15sp"
-
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="5dp"
-                app:layout_constraintRight_toRightOf="parent"/>
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mobileNumberTV" />
 
             <TextView
                 android:id="@+id/nationalIDCardImage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+
                 android:text="জাতীয় পরিচয় পত্রের ছবি"
                 android:textColor="#067CAF"
-
-                app:layout_constraintTop_toBottomOf="@id/idOfApplicants"
                 android:textSize="15sp"
-                android:layout_marginTop="5dp"
 
-                android:layout_marginRight="20dp"
-                app:layout_constraintRight_toRightOf="parent"/>
-
-
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/idOfApplicants" />
 
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/personalCL"
                 android:layout_width="match_parent"
                 android:layout_height="500dp"
-                app:layout_constraintTop_toBottomOf="@id/imageCard"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                app:cardCornerRadius="2dp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="30dp"
-                app:cardCornerRadius="2dp">
+                app:layout_constraintTop_toBottomOf="@id/imageCard">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
 
@@ -111,145 +118,140 @@
                         android:id="@+id/personalTV"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
                         android:text="ব্যক্তিগত তথ্যাদি"
+                        android:textColor="#020202"
                         android:textSize="25sp"
                         android:textStyle="normal"
-                        android:textColor="#020202"
                         app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="20dp"/>
+                        app:layout_constraintTop_toTopOf="parent" />
+
                     <View
                         android:id="@+id/view"
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
                         android:background="#443D3D"
                         android:orientation="horizontal"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/personalTV"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginTop="10dp"
-                        />
+                        app:layout_constraintTop_toBottomOf="@id/personalTV" />
 
                     <TextView
                         android:id="@+id/applicantsNameTV"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:layout_constraintTop_toBottomOf="@id/view"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toRightOf="parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="10dp"
                         android:text="নামঃ আকমল মিয়া"
                         android:textColor="#222020"
                         android:textSize="22sp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginTop="15dp"/>
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/view" />
+
                     <TextView
                         android:id="@+id/fatherTV"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:layout_constraintTop_toBottomOf="@id/applicantsNameTV"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toRightOf="parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="10dp"
                         android:text="নামঃ আকমল মিয়া"
                         android:textColor="#222020"
                         android:textSize="22sp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginTop="15dp"/>
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/applicantsNameTV" />
+
                     <TextView
                         android:id="@+id/mothersNameTV"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:layout_constraintTop_toBottomOf="@id/fatherTV"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toRightOf="parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="10dp"
                         android:text="নামঃ আকমল মিয়া"
                         android:textColor="#222020"
                         android:textSize="22sp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginTop="15dp"/>
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/fatherTV" />
 
                     <TextView
                         android:id="@+id/mobileNoTV"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:layout_constraintTop_toBottomOf="@id/mothersNameTV"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toRightOf="parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="10dp"
                         android:text="মোবাইল নম্বরঃ +৮৮ ০১৭৬০০০০১১১"
                         android:textColor="#222020"
                         android:textSize="22sp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginTop="15dp"/>
-
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/mothersNameTV" />
 
 
                     <TextView
                         android:id="@+id/emailTV"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:layout_constraintTop_toBottomOf="@id/mobileNoTV"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toRightOf="parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="10dp"
                         android:text="akmalMia@gmail.com"
                         android:textColor="#222020"
                         android:textSize="22sp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginTop="15dp"/>
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/mobileNoTV" />
 
                     <TextView
                         android:id="@+id/sexTV"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:layout_constraintTop_toBottomOf="@id/emailTV"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toRightOf="parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="10dp"
                         android:text="লিঙ্গঃ পুরুষ"
                         android:textColor="#222020"
                         android:textSize="22sp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginTop="15dp"/>
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/emailTV" />
 
                     <TextView
                         android:id="@+id/birthDateTV"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:layout_constraintTop_toBottomOf="@id/sexTV"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toRightOf="parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="10dp"
                         android:text="১২ জানুয়ারী,১৯৯৪"
                         android:textColor="#222020"
                         android:textSize="22sp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginTop="15dp"/>
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/sexTV" />
 
                     <TextView
                         android:id="@+id/bloodGroupTV"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:layout_constraintTop_toBottomOf="@id/birthDateTV"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toRightOf="parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="10dp"
                         android:text="বি পজেটিভ "
                         android:textColor="#222020"
                         android:textSize="22sp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginTop="15dp"/>
-
-
-
-
-
-
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/birthDateTV" />
 
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -262,13 +264,13 @@
                 android:id="@+id/currentAddress"
                 android:layout_width="match_parent"
                 android:layout_height="500dp"
-                app:layout_constraintTop_toBottomOf="@id/personalCL"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                app:cardCornerRadius="2dp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="30dp"
-                app:cardCornerRadius="2dp">
+                app:layout_constraintTop_toBottomOf="@id/personalCL">
 
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -495,7 +497,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1.5"
-                            android:text=""
+                            android:text="3 No"
                             android:textColor="#222020"
                             android:textSize="22sp" />
 
@@ -514,12 +516,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1.5"
-                            android:text=""
+                            android:text="B Block"
                             android:textColor="#222020"
                             android:textSize="22sp" />
 
 
                     </LinearLayout>
+
                     <LinearLayout
                         android:id="@+id/RoadAndHoldingLL"
                         android:layout_width="match_parent"
@@ -548,7 +551,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1.5"
-                            android:text=""
+                            android:text="jhjjd"
                             android:textColor="#222020"
                             android:textSize="22sp" />
 
@@ -567,7 +570,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1.5"
-                            android:text=""
+                            android:text="h-222"
                             android:textColor="#222020"
                             android:textSize="22sp" />
 
@@ -603,7 +606,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1.5"
-                            android:text=""
+                            android:text="NorthSreepur"
                             android:textColor="#222020"
                             android:textSize="22sp" />
 
@@ -622,11 +625,11 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1.5"
-                            android:text=""
+                            android:text="jdfjdj"
                             android:textColor="#222020"
                             android:textSize="22sp" />
 
-                        <include layout="@layout/permanent_residence" />
+
                     </LinearLayout>
 
 
@@ -634,44 +637,22 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="20dp"
                         android:layout_marginRight="10dp"
-                        app:layout_constraintTop_toBottomOf="@id/villageAndOwnershipType"
+                        android:orientation="vertical"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
-                        android:orientation="vertical">
+                        app:layout_constraintTop_toBottomOf="@id/villageAndOwnershipType">
+
+                        <include layout="@layout/permanent_residence" />
 
                     </LinearLayout>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
             </androidx.cardview.widget.CardView>
-
-
-
-
-
-
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
