@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/permanentResidenceTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="স্থায়ী ঠিকানা"
+        android:textColor="#020202"
+        android:textSize="25sp"
+        android:textStyle="normal"
+        />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#443D3D"
+        android:orientation="horizontal"
+       />
+
+    <LinearLayout
+        android:id="@+id/divisionAndZilla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        >
+
+        <TextView
+            android:id="@+id/divisionTitleTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="বিভাগঃ"
+            android:textColor="#222020"
+            android:textSize="22sp" />
+
+
+        <TextView
+            android:id="@+id/divisionTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="ঢাকা"
+            android:textColor="#222020"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/zillTitleTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:text="জেলাঃ"
+            android:textColor="#222020"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/zillaTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="ঢাকা"
+            android:textColor="#222020"
+            android:textSize="22sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/PostGroupAndCityCorp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:weightSum="5"
+     >
+
+        <TextView
+            android:id="@+id/postTitleGroup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="ডাকঘর গ্রুপঃ"
+            android:textColor="#222020"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/postGroup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ঢাকা"
+            android:textColor="#222020"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/cityCorpTitleTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="সিটি কর্পোঃ"
+            android:textColor="#222020"
+            android:textSize="22sp" />
+
+
+        <TextView
+            android:id="@+id/citycorpTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ঢাকা"
+            android:textColor="#222020"
+            android:textSize="22sp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ThanaAndPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:weightSum="5"
+     >
+
+        <TextView
+            android:id="@+id/thanaTitleTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="থানাঃ"
+            android:textColor="#222020"
+            android:textSize="22sp" />
+
+
+        <TextView
+            android:id="@+id/thanaTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="ঢাকা"
+            android:textColor="#222020"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/postTitleTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:text="ডাকঘরঃ"
+            android:textColor="#222020"
+            android:textSize="22sp" />
+
+
+        <TextView
+            android:id="@+id/postTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="ঢাকা"
+            android:textColor="#222020"
+            android:textSize="22sp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/WordAndBlockLV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <TextView
+            android:id="@+id/wordTitleTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ওয়ার্ড নংঃ"
+            android:textColor="#222020"
+            android:textSize="22sp" />
+
+
+        <TextView
+            android:id="@+id/wordTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text=""
+            android:textColor="#222020"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/blockTitleTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:text="ব্লক/সেক্টরঃ"
+            android:textColor="#222020"
+            android:textSize="22sp" />
+
+
+        <TextView
+            android:id="@+id/blockTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text=""
+            android:textColor="#222020"
+            android:textSize="22sp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/RoadAndHoldingLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        >
+
+        <TextView
+            android:id="@+id/RoadTitleTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="রোড নংঃ"
+            android:textColor="#222020"
+            android:textSize="22sp" />
+
+
+        <TextView
+            android:id="@+id/RoadTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text=""
+            android:textColor="#222020"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/holdingTItleTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:text="হোল্ডিং নংঃ"
+            android:textColor="#222020"
+            android:textSize="22sp" />
+
+
+        <TextView
+            android:id="@+id/holdingTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text=""
+            android:textColor="#222020"
+            android:textSize="22sp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/villageAndOwnershipType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <TextView
+            android:id="@+id/villageTitleTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="গ্রাম/বাড়িঃ"
+            android:textColor="#222020"
+            android:textSize="22sp" />
+
+
+        <TextView
+            android:id="@+id/villageTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text=""
+            android:textColor="#222020"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/ownershipTitleTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:text="মালিকানার ধরণঃ"
+            android:textColor="#222020"
+            android:textSize="22sp" />
+
+
+        <TextView
+            android:id="@+id/ownershipTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text=""
+            android:textColor="#222020"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

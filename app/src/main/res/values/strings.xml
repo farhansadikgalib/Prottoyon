@@ -13,6 +13,9 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+
+    <string name="applicantsNameAndId">আবেদনকারীর নাম, আবেদন আই ডি</string>
+
     <!--Turzz-->
     <string name="submit">সাবমিট </string>
 </resources>
