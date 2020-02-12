@@ -6,7 +6,7 @@ import android.os.Bundle;
 
 import com.farhan.prottoyon.R;
 
-public class Activity_Item2 extends AppCompatActivity {
+public class Activity_Approved_Apllication extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
