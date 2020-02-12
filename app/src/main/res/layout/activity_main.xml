@@ -12,18 +12,35 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
+        android:id="@+id/relative"
         android:layout_height="match_parent">
 
 
         <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/toolbar"
-            android:background="@color/colorPrimary"/>
+            android:background="@color/colorPrimary" />
 
+
+        <FrameLayout
+            android:layout_below="@id/toolbar"
+            android:id="@+id/mainframeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        </FrameLayout>
 
 
     </RelativeLayout>
+
+
+
+
+
+
+
 
     <com.google.android.material.navigation.NavigationView
         android:layout_width="match_parent"
@@ -34,6 +51,7 @@
         android:background="@color/colorPrimary"
         android:layout_gravity="start"
        />
+
 
 
 </androidx.drawerlayout.widget.DrawerLayout>
