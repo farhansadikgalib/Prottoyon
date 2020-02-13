@@ -13,9 +13,9 @@ import java.util.List;
 
 public class CurrentApplicationListAdapter extends RecyclerView.Adapter<CurrentApplicationListAdapter.ViewHolder> {
 
-    private List<Applicants> applicantsList;
+    private ArrayList<Applicants> applicantsList;
 
-    public CurrentApplicationListAdapter(ArrayList<CurrentApplicationListAdapter> applicantsList) {
+    public CurrentApplicationListAdapter(ArrayList<Applicants> applicantsList) {
         this.applicantsList = applicantsList;
     }
 

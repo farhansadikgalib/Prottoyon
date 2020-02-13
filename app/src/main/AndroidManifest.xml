@@ -14,7 +14,7 @@
         <activity android:name=".All_Item.Activity_Item4" />
         <activity android:name=".All_Item.Activity_Item3" />
         <activity android:name=".All_Item.Activity_Item1" />
-        <activity android:name=".All_Item.Activity_Approved_Apllication" />
+        <activity android:name=".All_Item.Activity_Approved_Application" />
         <activity android:name=".LoginActivity" />
         <activity
             android:name=".SplashScreen"

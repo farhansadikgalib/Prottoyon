@@ -4,12 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".All_Item.Activity_Approved_Apllication">
+    android:id="@+id/activity_item_2"
+    tools:context=".All_Item.Activity_Approved_Application">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textSize="50sp"
-        android:text="Item 2"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click ME"
+        tools:ignore="MissingConstraints"
+        android:onClick="clickmefunc"
+        ></Button>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -23,7 +23,7 @@ import java.util.List;
  */
 public class CurrentApplicationListFragment extends Fragment {
 
-    ArrayList<CurrentApplicationListAdapter> applicantsList =new ArrayList<>();
+    ArrayList<Applicants> applicantsList =new ArrayList<>();
     RecyclerView applicantsRV;
     Context context;
     RecyclerView.LayoutManager layoutManager;
