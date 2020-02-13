@@ -26,6 +26,7 @@ public class Activity_Approved_Application extends AppCompatActivity {
                 FragmentManager fn =getSupportFragmentManager();
                 Approved_Application_details ApprovedAppDeatails = new Approved_Application_details();
                 fn.beginTransaction().replace(R.id.activity_item_2,ApprovedAppDeatails).commit();
+//                asasd
             }
         });
 
