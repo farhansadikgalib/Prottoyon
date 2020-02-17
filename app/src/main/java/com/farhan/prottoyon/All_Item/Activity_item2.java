@@ -23,10 +23,6 @@ import java.util.List;
 
 public class Activity_item2 extends AppCompatActivity {
 
-//    CardView itemCV;
-//    TextView txt1;
-
-
     private RecyclerView recyclerView;
     List<ItemModel> itemsx;
 
@@ -34,21 +30,6 @@ public class Activity_item2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity__item2);
-
-
-//        txt1 = findViewById(R.id.click_me);
-//        txt1.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                startActivity(new Intent(getBaseContext(), .class));
-//            }
-//        });
-//    }
-
-
-
-
-
 
     itemsx = new ArrayList<>();
     getDatax();
