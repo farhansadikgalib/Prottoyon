@@ -11,11 +11,8 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.farhan.prottoyon.Approoved_Application.Approved_Application_details;
 
 import java.util.ArrayList;
 
@@ -81,7 +78,7 @@ public class CurrentApplicationListAdapter extends RecyclerView.Adapter<CurrentA
 
                // itemCV = itemView.findViewById(R.id.iteamID);
 
-                layout = itemView.findViewById(R.id.iteamID);
+//                layout = itemView.findViewById(R.id.iteamID);
 
 
 

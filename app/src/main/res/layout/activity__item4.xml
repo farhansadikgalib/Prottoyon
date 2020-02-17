@@ -6,10 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".All_Item.Activity_Item4">
 
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textSize="50sp"
-        android:text="Item 4"/>
+        android:id="@+id/recyclerView4"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

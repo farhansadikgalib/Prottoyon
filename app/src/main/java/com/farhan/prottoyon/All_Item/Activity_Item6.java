@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
-import com.farhan.prottoyon.Model.AdapetList;
+import com.farhan.prottoyon.Adapter.Adapter_item6;
 import com.farhan.prottoyon.Model.ItemModel;
 import com.farhan.prottoyon.R;
 
@@ -34,7 +34,7 @@ public class Activity_Item6 extends AppCompatActivity {
 
         //List<ItemModel> rowListItem = getAllItemList() ;
 
-        AdapetList adapter = new AdapetList(Activity_Item6.this,items);
+        Adapter_item6 adapter = new Adapter_item6(Activity_Item6.this,items);
 
         recyclerView.setAdapter(adapter);
 

@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".All_Item.Activity_Item3">
-    <TextView
+
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textSize="50sp"
-        android:text="Item 3"/>
+        android:id="@+id/recyclerView3"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
