@@ -3,6 +3,7 @@ package com.farhan.prottoyon.Approoved_Application;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -27,21 +28,14 @@ public class Activity_Approved_Application_details extends AppCompatActivity {
         appli_name.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FragmentManager fn =getSupportFragmentManager();
-                 ApplicantsDescriptionWithCommentBox ApprovedAppDeatailsithCommentBox = new ApplicantsDescriptionWithCommentBox();
-                 fn.beginTransaction().replace(R.id.fragment_container,ApprovedAppDeatailsithCommentBox).commit();
-//                ApplicantsDescriptionWithCommentBox fragmentB = new ApplicantsDescriptionWithCommentBox();
-//                getFragmentManager().beginTransaction()
-//                        .add
-//                        .addToBackStack(LoginActivity.class.getSimpleName())
-//                        .commit();
+                startActivity(new Intent(getBaseContext(),App_Des_with_CommentBox.class));
             }
         });
 
         certificate_name.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                startActivity(new Intent(getBaseContext(), Warish_class.class));
             }
         });
 

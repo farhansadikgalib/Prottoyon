@@ -11,7 +11,6 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.farhan.prottoyon.Approoved_Application.Activity_Approved_Application_details;
-import com.farhan.prottoyon.Approoved_Application.Approved_Application_details;
 import com.farhan.prottoyon.R;
 
 public class Activity_Approved_Application extends AppCompatActivity {
