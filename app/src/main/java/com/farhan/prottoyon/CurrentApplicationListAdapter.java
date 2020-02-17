@@ -9,7 +9,6 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class CurrentApplicationListAdapter extends RecyclerView.Adapter<CurrentApplicationListAdapter.ViewHolder> {
 
@@ -48,7 +47,7 @@ public class CurrentApplicationListAdapter extends RecyclerView.Adapter<CurrentA
 
                 nameTV=itemView.findViewById(R.id.nameTV);
                 legacyTV=itemView.findViewById(R.id.legacyTV);
-                applicantionTV=itemView.findViewById(R.id.applicantionTV);
+                applicantionTV=itemView.findViewById(R.id.dateTV);
                 applicantsIdTV=itemView.findViewById(R.id.applicantsIdTV);
             }
         }

@@ -1,74 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="horizontal"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp"
+    android:layout_marginTop="15dp"
+    >
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="#ffff"
-        android:id="@+id/iteamID"
+        android:id="@+id/cardView"
         >
-        <androidx.constraintlayout.widget.ConstraintLayout
+
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
-
-            <TextView
-                android:id="@+id/nameTV"
-                android:layout_width="150dp"
-                android:layout_height="40dp"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:text="আব্দুল হালিম"
-                android:gravity=""
-                android:textColor="#131212"
-                android:textSize="25sp"
-                />
-            <TextView
-                android:id="@+id/legacyTV"
-                android:layout_width="150dp"
-                android:layout_height="30dp"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/nameTV"
-                android:text="উত্তরাধিকার সনদ"
-                android:textColor="#067CAF"
-                android:textSize="20sp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="5dp"/>
-
-            <TextView
-                android:id="@+id/applicantionTV"
-                android:layout_width="200dp"
-                android:layout_height="40dp"
-                app:layout_constraintLeft_toRightOf="@id/nameTV"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                android:text="আবেদনের তাঃ ১২/১২/২০১৯"
-                android:layout_marginLeft="10dp"
-                android:gravity="center"
-                android:layout_marginTop="10dp"/>
-
-            <TextView
-                android:id="@+id/applicantsIdTV"
-                android:layout_width="200dp"
-                android:layout_height="40dp"
-                app:layout_constraintLeft_toRightOf="@id/nameTV"
-                app:layout_constraintTop_toBottomOf="@id/applicantionTV"
-                app:layout_constraintRight_toRightOf="parent"
-                android:text="আবেদন আই ডিঃ ৫০২৬৫২১৫২০"
-                android:layout_marginLeft="10dp"
-                android:gravity="center"
-                android:layout_marginTop="10dp"/>
+            android:layout_height="wrap_content">
 
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/nameTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:text="আব্দুল হালিম"
+                    android:textAlignment="center"
+                    android:textColor="#131212"
+                    android:textSize="20dp" />
+
+
+                <TextView
+                    android:id="@+id/datTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/bengali"
+                    android:padding="10dp"
+                    android:textAlignment="textEnd"
+                    android:text="আবেদনের তাঃ"
+                    android:textSize="14dp"
+                    android:gravity="end" />
+
+
+                <TextView
+                    android:id="@+id/dateTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:fontFamily="@font/bengali"
+                    android:gravity="left"
+                    android:text="১২/১২/২০১৯"
+                    android:textAlignment="viewStart"
+                    android:textSize="14dp"
+                    tools:ignore="RtlCompat" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+                <TextView
+                    android:id="@+id/legacyTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0"
+                    android:textAlignment="center"
+                    android:text="উত্তরাধিকার সনদ"
+                    android:textColor="#067CAF"
+                    android:textSize="16dp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/applicansIdTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/bengali"
+                    android:gravity="center"
+                    android:textAlignment="textEnd"
+                    android:text="আবেদন আইডিঃ   "
+                    android:textSize="14dp"
+                    tools:ignore="RtlCompat" />
+
+
+                <TextView
+                    android:id="@+id/applicantsIdTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:layout_marginLeft="1dp"
+                    android:layout_gravity="left"
+                    android:textAlignment="viewStart"
+                    android:fontFamily="@font/bengali"
+                    android:gravity="center"
+                    android:text="১২৩৬৫৪৭৯৫"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlCompat" />
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 
