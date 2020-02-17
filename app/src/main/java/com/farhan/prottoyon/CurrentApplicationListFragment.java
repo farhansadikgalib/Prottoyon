@@ -60,7 +60,7 @@ public class CurrentApplicationListFragment extends Fragment {
         applicantsRV.setLayoutManager(layoutManager);
 
         // specify an adapter (see also next example)
-        CurrentApplicationListAdapter mAdapter = new CurrentApplicationListAdapter(applicantsList);
+        CurrentApplicationListAdapter mAdapter = new CurrentApplicationListAdapter(getActivity(),applicantsList);
         applicantsRV.setAdapter(mAdapter);
     }
 }

@@ -17,7 +17,9 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_marginLeft="35dp"
-            android:layout_marginRight="35dp">
+            android:layout_marginRight="35dp"
+
+            >
 
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -487,35 +489,93 @@
 
 
 
-            <Button
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="40dp"-->
+<!--                android:layout_marginRight="20dp"-->
+<!--                android:background="#860DB2"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:visibility="gone"-->
+<!--                android:gravity="center"-->
+<!--                android:fontFamily="@font/bengali"-->
+<!--                android:text="অনুমোদন"-->
+<!--                android:textColor="#ffffff"-->
+<!--                android:textSize="16dp"-->
+<!--                android:layout_centerInParent="true"/>-->
+
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="40dp"
-                android:layout_marginRight="20dp"
-                android:background="#860DB2"
+                android:layout_height="?attr/actionBarSize"
                 android:layout_gravity="center"
-                android:drawableLeft="@drawable/correct_sign"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="40sp"
+                android:layout_marginRight="20sp"
+                android:background="#860DB2"
+                android:fontFamily="@font/bengali"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:textColor="#ffffff">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/correct_sign" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="অনুমোদন"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
                 android:gravity="center"
                 android:fontFamily="@font/bengali"
-                android:text="অনুমোদন"
-                android:textColor="#ffffff"
-                android:textSize="16dp"
-                android:layout_centerInParent="true"/>
-
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="প্রত্যাখ্যান "
-                android:textSize="16dp"
-                android:fontFamily="@font/bengali"
-                android:textColor="#860DB2"
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
                 android:background="@drawable/button_border"
-                android:layout_marginBottom="30dp"/>
+                android:textColor="#ffffff"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/wrong_sign"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="প্রত্যাখ্যান "
+                    android:textColor="#860DB2"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="প্রত্যাখ্যান "-->
+<!--                android:textSize="16dp"-->
+<!--                android:fontFamily="@font/bengali"-->
+<!--                android:textColor="#860DB2"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginRight="20dp"-->
+<!--                android:background="@drawable/button_border"-->
+<!--                android:layout_marginBottom="30dp"/>-->
 
 
 

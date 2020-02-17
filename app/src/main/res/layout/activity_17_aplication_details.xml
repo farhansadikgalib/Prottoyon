@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ECECEC">
+    android:background="#ECECEC"
+    android:id="@+id/fragment_container"
+    >
 
     <!-- TODO: Update blank fragment layout -->
-
 
     <ScrollView
         android:layout_width="match_parent"
@@ -23,7 +24,8 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:paddingTop="10sp">
 
                 <ImageView
                     android:id="@+id/imageView2"
@@ -43,6 +45,7 @@
                     android:layout_marginRight="10dp"
                     android:fontFamily="@font/bengali"
                     android:text="আব্দুল হালিম"
+                    android:onClick="profile_details"
                     android:textColor="#860DB2"
                     android:textSize="20dp"
                     app:layout_constraintRight_toRightOf="parent"
