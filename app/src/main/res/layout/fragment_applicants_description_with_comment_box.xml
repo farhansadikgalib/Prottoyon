@@ -114,8 +114,6 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent">
 
-                <include layout="@layout/personal_info_layout" />
-
                 <include layout="@layout/permanent_residence"/>
 
                 <include layout="@layout/comment_box_layout"/>
@@ -148,6 +146,10 @@
         android:text="সাবমিট"
         android:background="#860DB2"/>
 
+    <include
+        layout="@layout/personal_info_layout"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="-172dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
