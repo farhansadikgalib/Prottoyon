@@ -28,5 +28,6 @@ public class LoginActivity extends AppCompatActivity {
         ft.replace(frameLayout.getId(), fragment);
         ft.commit();
 
+
     }
 }

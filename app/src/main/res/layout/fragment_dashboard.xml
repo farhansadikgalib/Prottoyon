@@ -138,7 +138,7 @@
                         android:layout_marginTop="8dp"
                         android:layout_marginRight="10dp"
                         android:layout_alignParentRight="true"
-                        android:src="@drawable/icon_g"
+                        android:src="@drawable/ic_leader_1"
                         android:id="@+id/ImgViewId1">
 
                     </ImageView>
@@ -211,7 +211,7 @@
                         android:layout_alignParentRight="true"
                         android:layout_marginTop="8dp"
                         android:layout_marginRight="10dp"
-                        android:src="@drawable/icon_s">
+                        android:src="@drawable/ic_search_2">
 
                     </ImageView>
 
@@ -289,7 +289,7 @@
                         android:layout_height="70dp"
                         android:layout_marginTop="8dp"
                         android:layout_alignParentRight="true"
-                        android:src="@drawable/group"
+                        android:src="@drawable/ic_rejected_1"
                         android:layout_marginRight="10dp"
                         android:id="@+id/ImgViewId2">
 
@@ -360,7 +360,7 @@
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:layout_alignParentRight="true"
-                        android:src="@drawable/work"
+                        android:src="@drawable/ic_work_1"
                         android:layout_marginRight="10dp"
                         android:layout_marginTop="8dp"
                         android:id="@+id/ImgViewId">
@@ -432,6 +432,7 @@
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:id="@+id/ItemId6"
+                    android:layout_marginRight="10dp"
                     android:background="#FFFFFF"
                     android:layout_margin="10dp"
                     android:layout_height="wrap_content">
@@ -440,7 +441,7 @@
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:layout_alignParentRight="true"
-                        android:src="@drawable/icon_t"
+                        android:src="@drawable/ic_no_1"
                         android:layout_marginRight="10dp"
                         android:layout_marginTop="8dp"
                         android:id="@+id/ImgViewId233">
@@ -499,6 +500,17 @@
 
                 </RelativeLayout>
 
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/ItemI"
+                    android:layout_marginRight="10dp"
+                    android:background="#FFFFFF"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content">
+
+
+                </RelativeLayout>
 
             </LinearLayout>
 
@@ -509,10 +521,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ict">
+                android:src="@drawable/banner">
 
             </ImageView>
         </LinearLayout>

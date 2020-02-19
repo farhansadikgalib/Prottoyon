@@ -28,9 +28,10 @@
                         </option>
                         <option name="values">
                           <map>
+                            <entry key="assetSourceType" value="FILE" />
                             <entry key="color" value="737972" />
-                            <entry key="outputName" value="date_warish" />
-                            <entry key="sourceFile" value="C:\Users\Farhan Sadik Galib\Desktop\logout.svg" />
+                            <entry key="outputName" value="ic_bannar" />
+                            <entry key="sourceFile" value="C:\Users\User1\Downloads\bannar.svg" />
                           </map>
                         </option>
                       </PersistentState>
