@@ -20,13 +20,27 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimary" />
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="প্রত্যায়ন"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:fontFamily="@font/bengali"
+                android:layout_marginRight="50dp"/>
+
+        </androidx.appcompat.widget.Toolbar>
 
 
         <FrameLayout
             android:layout_below="@id/toolbar"
             android:id="@+id/mainframeLayout"
             android:layout_width="match_parent"
+            android:background="#ECECEC"
             android:layout_height="wrap_content">
 
 
