@@ -8,7 +8,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="10dp"
+
         android:background="#ECECEC"
         android:orientation="vertical">
 
@@ -17,6 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
+            android:layout_margin="10dp"
             android:background="#ECECEC"
             tools:context=".Dashboard">
 
@@ -530,6 +531,8 @@
 
             </LinearLayout>
 
+
+
         </RelativeLayout>
 
         <LinearLayout
@@ -544,23 +547,18 @@
             </ImageView>
 
         </LinearLayout>
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="8dp"
+            android:background="@color/colorPrimary"
             android:layout_gravity="bottom"
-            android:background="#8CC63F"
             android:orientation="vertical">
 
-            <View
-                android:layout_width="fill_parent"
-                android:layout_height="10sp"
-                android:layout_gravity="bottom"
-                android:background="#8CC63F" />
+
         </LinearLayout>
 
-
     </LinearLayout>
+
 
 
 </ScrollView>
