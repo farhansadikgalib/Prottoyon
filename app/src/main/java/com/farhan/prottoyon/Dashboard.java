@@ -78,6 +78,6 @@ public class Dashboard extends Fragment implements  View.OnClickListener {
             startActivity(new Intent(getActivity(), Activity_Item6.class));
         }
 
-
     }
+
 }
