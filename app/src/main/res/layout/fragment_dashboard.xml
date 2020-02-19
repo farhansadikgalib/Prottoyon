@@ -1,107 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_marginTop="5dp"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_marginTop="5dp">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:background="#ECECEC"
+        android:layout_height="match_parent"
         android:layout_margin="10dp"
-        android:layout_height="match_parent">
+        android:background="#ECECEC"
+        android:orientation="vertical">
 
         <RelativeLayout
+            android:id="@+id/frameLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/frameLayout"
-            android:background="#ECECEC"
             android:layout_gravity="center"
+            android:background="#ECECEC"
             tools:context=".Dashboard">
+
             <LinearLayout
+                android:id="@+id/xxx"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/xxx"
-                android:weightSum="2"
-                android:background="#990ACD"
-                android:layout_marginTop="10dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp">
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#990ACD"
+                android:weightSum="2">
 
                 <RelativeLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_margin="10dp">
+                    android:layout_margin="10dp"
+                    android:layout_weight="1">
 
 
                     <RelativeLayout
+                        android:id="@+id/leniearId1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:id="@+id/leniearId1"
-                        android:orientation="horizontal"
-                        >
+                        android:orientation="horizontal">
 
                         <TextView
+                            android:id="@+id/Text_Number"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="৭৬"
                             android:layout_centerInParent="true"
-                            android:fontFamily="@font/bengali"
                             android:layout_marginLeft="20dp"
                             android:layout_marginTop="20dp"
+                            android:fontFamily="@font/bengali"
+                            android:text="৭৬"
                             android:textColor="#FFFFFF"
-                            android:textStyle="bold"
                             android:textSize="60sp"
 
 
-                            android:id="@+id/Text_Number">
+                            android:textStyle="bold">
 
 
                         </TextView>
+
                         <TextView
+                            android:id="@+id/Text_Number2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="টি"
 
                             android:layout_marginTop="60dp"
-                            android:fontFamily="@font/bengali"
-                            android:textColor="#FFFFFF"
-                            android:textStyle="bold"
-                            android:textSize="30sp"
-
-
                             android:layout_toEndOf="@+id/Text_Number"
-                            android:id="@+id/Text_Number2"
-                            android:layout_toRightOf="@+id/Text_Number" />
+                            android:layout_toRightOf="@+id/Text_Number"
+                            android:fontFamily="@font/bengali"
+                            android:text="টি"
+
+
+                            android:textColor="#FFFFFF"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
                         <TextView
-                            android:layout_centerHorizontal="true"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="20sp"
-
                             android:layout_below="@+id/Text_Number"
-                            android:text="সাম্প্রতিক আবেদন"
+                            android:layout_centerHorizontal="true"
+
                             android:fontFamily="@font/bengali"
-                            android:textColor="@android:color/white"/>
+                            android:text="সাম্প্রতিক আবেদন"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
 
                     </RelativeLayout>
 
 
                 </RelativeLayout>
+
                 <RelativeLayout
                     android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
                     <ImageView
+                        android:id="@+id/hader"
                         android:layout_width="200dp"
                         android:layout_height="200dp"
-                        android:src="@drawable/ic_group"
-                        android:layout_margin="20dp"
                         android:layout_centerInParent="true"
-                        android:id="@+id/hader"/>
+                        android:layout_margin="20dp"
+                        android:src="@drawable/ic_group" />
                 </RelativeLayout>
 
 
@@ -109,87 +112,90 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:background="#710897"
+                android:layout_height="8dp"
+                android:orientation="vertical"
                 android:layout_below="@id/xxx"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:layout_height="8dp"/>
+                android:background="#710897" />
 
             <LinearLayout
-                android:layout_marginTop="10dp"
-                android:layout_below="@id/xxx"
-                android:layout_width="match_parent"
-                android:weightSum="2"
                 android:id="@+id/Linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/xxx"
+                android:layout_marginTop="10dp"
                 android:background="#ECECEC"
-                android:layout_height="wrap_content">
+                android:weightSum="2">
 
                 <RelativeLayout
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:id="@+id/ItemId2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_margin="10dp"
-                    android:background="#FFFFFF"
-                    android:layout_height="wrap_content">
+                    android:layout_weight="1"
+                    android:background="#FFFFFF">
 
                     <ImageView
+                        android:id="@+id/ImgViewId1"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
+                        android:layout_alignParentRight="true"
                         android:layout_marginTop="8dp"
                         android:layout_marginRight="10dp"
-                        android:layout_alignParentRight="true"
-                        android:src="@drawable/ic_leader_1"
-                        android:id="@+id/ImgViewId1">
+                        android:src="@drawable/ic_leader_1">
 
                     </ImageView>
 
                     <LinearLayout
+                        android:id="@+id/leniearId111"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/leniearId111"
-                        android:orientation="horizontal"
-                        android:layout_below="@id/ImgViewId1">
+                        android:layout_below="@id/ImgViewId1"
+                        android:orientation="horizontal">
 
                         <TextView
+                            android:id="@+id/Text_Number11"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="২৭৬"
                             android:padding="10dp"
-                            android:textStyle="bold"
-                            android:textSize="40sp"
+                            android:text="২৭৬"
                             android:textColor="#710897"
-                            android:id="@+id/Text_Number11">
+                            android:textSize="40sp"
+                            android:textStyle="bold">
 
 
                         </TextView>
+
                         <TextView
+                            android:id="@+id/Text_Number222"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="টি"
-                            android:textStyle="bold"
-                            android:textSize="20sp"
                             android:padding="10dp"
-
+                            android:text="টি"
                             android:textColor="#710897"
-                            android:id="@+id/Text_Number222"/>
+
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
 
 
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/leniearId111"
-                        android:background="#F2CDFF"
-                        >
+                        android:background="#F2CDFF">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp"
-                            android:textStyle="bold"
                             android:layout_marginLeft="10dp"
                             android:fontFamily="@font/bengali"
                             android:text="অনুুমোদিত আবেদন"
-                            android:textColor="#710897"/>
+                            android:textColor="#710897"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
 
 
                     </LinearLayout>
@@ -197,12 +203,12 @@
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:layout_margin="10dp"
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:background="@android:color/white"
                     android:id="@+id/ItemId3"
-                    android:layout_height="wrap_content">
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/white">
 
                     <ImageView
                         android:id="@+id/ImgViewId11"
@@ -216,51 +222,53 @@
                     </ImageView>
 
                     <LinearLayout
+                        android:id="@+id/leniearId11"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/leniearId11"
-                        android:orientation="horizontal"
-                        android:layout_below="@id/ImgViewId11">
+                        android:layout_below="@id/ImgViewId11"
+                        android:orientation="horizontal">
 
                         <TextView
+                            android:id="@+id/Text11"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="২৭৬"
                             android:padding="10dp"
-                            android:textStyle="bold"
-                            android:textSize="40sp"
+                            android:text="২৭৬"
                             android:textColor="#710897"
-                            android:id="@+id/Text11">
+                            android:textSize="40sp"
+                            android:textStyle="bold">
 
 
                         </TextView>
+
                         <TextView
+                            android:id="@+id/Text22"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:padding="10dp"
                             android:text="টি"
                             android:textColor="#710897"
-                            android:textStyle="bold"
                             android:textSize="20sp"
-                            android:padding="10dp"
-                            android:id="@+id/Text22"/>
+                            android:textStyle="bold" />
 
 
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/leniearId11"
-                        android:background="#F2CDFF"
-                        >
+                        android:background="#F2CDFF">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp"
-                            android:textStyle="bold"
                             android:layout_marginLeft="10dp"
                             android:fontFamily="@font/bengali"
                             android:text="বিবেচনাধীন আবেদন"
-                            android:textColor="#710897"/>
+                            android:textColor="#710897"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
 
 
                     </LinearLayout>
@@ -270,78 +278,81 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:weightSum="2"
                 android:id="@+id/yyy"
-                android:background="#ECECEC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_below="@id/Linear"
-                android:layout_height="wrap_content">
+                android:background="#ECECEC"
+                android:weightSum="2">
+
                 <RelativeLayout
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:id="@+id/ItemId4"
-                    android:background="#FFFFFF"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_margin="10dp"
-                    android:layout_height="wrap_content">
+                    android:layout_weight="1"
+                    android:background="#FFFFFF">
 
                     <ImageView
+                        android:id="@+id/ImgViewId2"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:layout_marginTop="8dp"
                         android:layout_alignParentRight="true"
-                        android:src="@drawable/ic_rejected_1"
+                        android:layout_marginTop="8dp"
                         android:layout_marginRight="10dp"
-                        android:id="@+id/ImgViewId2">
+                        android:src="@drawable/ic_rejected_1">
 
                     </ImageView>
 
                     <LinearLayout
+                        android:id="@+id/leniearId2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/leniearId2"
-                        android:orientation="horizontal"
-                        android:layout_below="@id/ImgViewId2">
+                        android:layout_below="@id/ImgViewId2"
+                        android:orientation="horizontal">
 
                         <TextView
+                            android:id="@+id/Text_Number_2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="২৭৬"
                             android:padding="10dp"
-                            android:textStyle="bold"
-                            android:textSize="40sp"
+                            android:text="২৭৬"
                             android:textColor="#710897"
+                            android:textSize="40sp"
 
-                            android:id="@+id/Text_Number_2">
+                            android:textStyle="bold">
 
 
                         </TextView>
+
                         <TextView
+                            android:id="@+id/Text_Number22"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:padding="10dp"
                             android:text="টি"
                             android:textColor="#710897"
-                            android:textStyle="bold"
                             android:textSize="20sp"
-                            android:padding="10dp"
-                            android:id="@+id/Text_Number22"/>
+                            android:textStyle="bold" />
 
 
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/leniearId2"
-                        android:background="#F2CDFF"
-                        >
+                        android:background="#F2CDFF">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp"
-                            android:textStyle="bold"
                             android:layout_marginLeft="10dp"
                             android:fontFamily="@font/bengali"
                             android:text="অনুুমোদিত আবেদন"
-                            android:textColor="#710897"/>
+                            android:textColor="#710897"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
 
 
                     </LinearLayout>
@@ -349,70 +360,72 @@
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:layout_margin="10dp"
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:id="@+id/ItemId5"
-                    android:background="#FFFFFF"
-                    android:layout_height="wrap_content">
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF">
 
                     <ImageView
+                        android:id="@+id/ImgViewId"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:layout_alignParentRight="true"
-                        android:src="@drawable/ic_work_1"
-                        android:layout_marginRight="10dp"
                         android:layout_marginTop="8dp"
-                        android:id="@+id/ImgViewId">
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_work_1">
 
                     </ImageView>
 
                     <LinearLayout
+                        android:id="@+id/leniearId"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/leniearId"
-                        android:orientation="horizontal"
-                        android:layout_below="@id/ImgViewId">
+                        android:layout_below="@id/ImgViewId"
+                        android:orientation="horizontal">
 
                         <TextView
+                            android:id="@+id/Text1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:padding="10dp"
                             android:text="২৭৬"
                             android:textColor="#710897"
-                            android:padding="10dp"
-                            android:textStyle="bold"
                             android:textSize="40sp"
-                            android:id="@+id/Text1">
+                            android:textStyle="bold">
 
 
                         </TextView>
+
                         <TextView
+                            android:id="@+id/Text2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:padding="10dp"
                             android:text="টি"
                             android:textColor="#710897"
-                            android:textStyle="bold"
                             android:textSize="20sp"
-                            android:padding="10dp"
-                            android:id="@+id/Text2"/>
+                            android:textStyle="bold" />
 
 
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/leniearId"
-                        android:background="#F2CDFF"
-                        >
+                        android:background="#F2CDFF">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp"
-                            android:textStyle="bold"
                             android:layout_marginLeft="10dp"
                             android:fontFamily="@font/bengali"
                             android:text="পুনরায় জমা আবেদন"
-                            android:textColor="#710897"/>
+                            android:textColor="#710897"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
 
 
                     </LinearLayout>
@@ -422,78 +435,81 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:weightSum="2"
                 android:id="@+id/last"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_below="@id/yyy"
                 android:background="#ECECEC"
-                android:layout_height="wrap_content">
+                android:weightSum="2">
+
                 <RelativeLayout
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:id="@+id/ItemId6"
-                    android:layout_marginRight="10dp"
-                    android:background="#FFFFFF"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_margin="10dp"
-                    android:layout_height="wrap_content">
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF">
 
                     <ImageView
+                        android:id="@+id/ImgViewId233"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:layout_alignParentRight="true"
-                        android:src="@drawable/ic_no_1"
-                        android:layout_marginRight="10dp"
                         android:layout_marginTop="8dp"
-                        android:id="@+id/ImgViewId233">
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_no_1">
 
                     </ImageView>
 
                     <LinearLayout
+                        android:id="@+id/leniearId233"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/leniearId233"
-                        android:orientation="horizontal"
-                        android:layout_below="@id/ImgViewId233">
+                        android:layout_below="@id/ImgViewId233"
+                        android:orientation="horizontal">
 
                         <TextView
+                            android:id="@+id/Text_Number_233"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:padding="10dp"
                             android:text="২৭৬"
                             android:textColor="#710897"
-                            android:padding="10dp"
-                            android:textStyle="bold"
                             android:textSize="40sp"
-                            android:id="@+id/Text_Number_233">
+                            android:textStyle="bold">
 
 
                         </TextView>
+
                         <TextView
+                            android:id="@+id/Text_Number2233"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:padding="10dp"
                             android:text="টি"
                             android:textColor="#710897"
-                            android:textStyle="bold"
                             android:textSize="20sp"
-                            android:padding="10dp"
-                            android:id="@+id/Text_Number2233"/>
+                            android:textStyle="bold" />
 
 
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/leniearId233"
-                        android:background="#F2CDFF"
-                        >
+                        android:background="#F2CDFF">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp"
-                            android:textStyle="bold"
                             android:layout_marginLeft="10dp"
                             android:fontFamily="@font/bengali"
                             android:text=" সময় শেষ"
-                            android:textColor="#710897"/>
+                            android:textColor="#710897"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
 
 
                     </LinearLayout>
@@ -501,13 +517,13 @@
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:id="@+id/ItemI"
-                    android:layout_marginRight="10dp"
-                    android:background="#FFFFFF"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_margin="10dp"
-                    android:layout_height="wrap_content">
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF">
 
 
                 </RelativeLayout>
@@ -518,29 +534,33 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="100dp"
             android:orientation="vertical">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:src="@drawable/banner">
-
             </ImageView>
+
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="8dp"
-            android:background="#6DB113"
             android:layout_gravity="bottom"
-
+            android:background="#8CC63F"
             android:orientation="vertical">
 
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="10sp"
+                android:layout_gravity="bottom"
+                android:background="#8CC63F" />
         </LinearLayout>
 
-    </LinearLayout>
 
+    </LinearLayout>
 
 
 </ScrollView>
