@@ -20,20 +20,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimary">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="প্রত্যায়ন"
-                android:textStyle="bold"
-                android:fontFamily="@font/bengali"
-                android:textSize="30sp"
-                android:textColor="#FFFFFF"
-                android:layout_marginRight="50dp"
-                android:gravity="center">
-
-            </TextView>
-        </androidx.appcompat.widget.Toolbar>
+            android:background="@color/colorPrimary" />
 
 
         <FrameLayout
