@@ -9,6 +9,8 @@
     <color name="colorPrimaryDarkSplash">#00993F</color>
     <color name="colorAccentSplash">#E65100</color>
 
+    <color name="white">#F2F7EB</color>
+
     <color name="grey">#F2F7EB</color>
     <color name="grey_text">#686868</color>
 
