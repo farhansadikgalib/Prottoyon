@@ -25,9 +25,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        setTitle("প্রত্যায়ন");
         setContentView(R.layout.activity_main); drawerLayout = findViewById(R.id.drawer);
         toolbar = findViewById(R.id.toolbar);
+
         navigationView = findViewById(R.id.navigationView);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
