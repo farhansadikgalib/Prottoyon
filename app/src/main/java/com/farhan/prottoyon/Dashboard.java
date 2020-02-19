@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 import androidx.fragment.app.Fragment;
@@ -30,7 +31,8 @@ public class Dashboard extends Fragment implements  View.OnClickListener {
     }
 
     FrameLayout frameLayoutx;
-    RelativeLayout Item1,Item2,Item3,Item4,Item5,Item6;
+    RelativeLayout Item2,Item3,Item4,Item5,Item6;
+    LinearLayout Item1;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
@@ -38,7 +40,7 @@ public class Dashboard extends Fragment implements  View.OnClickListener {
 
         frameLayoutx = view.findViewById(R.id.mainframeLayout);
 
-        Item1 = view.findViewById(R.id.ItemId1);
+        Item1 = view.findViewById(R.id.xxx);
         Item2 = view.findViewById(R.id.ItemId2);
         Item3 = view.findViewById(R.id.ItemId3);
         Item4 = view.findViewById(R.id.ItemId4);
@@ -57,7 +59,7 @@ public class Dashboard extends Fragment implements  View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        if (v.getId()==R.id.ItemId1){
+        if (v.getId()==R.id.xxx){
             startActivity(new Intent(getActivity(), Activity_Item1.class));
         }
         if (v.getId()==R.id.ItemId2){
