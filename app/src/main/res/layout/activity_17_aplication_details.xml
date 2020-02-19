@@ -10,6 +10,27 @@
 
     <!-- TODO: Update blank fragment layout -->
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#8CC63F">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" সাম্প্রতিক আবেদন"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+    </RelativeLayout>
+
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -45,6 +66,7 @@
                     android:layout_marginRight="10dp"
                     android:fontFamily="@font/bengali"
                     android:text="আব্দুল হালিম"
+                    android:textStyle="bold"
                     android:onClick="profile_details"
                     android:textColor="#860DB2"
                     android:textSize="20dp"
@@ -108,7 +130,7 @@
                         android:layout_alignParentRight="true"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
-                        android:background="#ff9703" />
+                        android:background="#E5E5E5" />
 
 
 
