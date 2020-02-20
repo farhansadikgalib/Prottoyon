@@ -12,7 +12,6 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.farhan.prottoyon.ApplicantDetailsActivity;
-import com.farhan.prottoyon.Approved_Application_Activity;
 import com.farhan.prottoyon.Model.ItemModel;
 import com.farhan.prottoyon.R;
 

@@ -9,13 +9,12 @@
         android:roundIcon="@drawable/round_logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".Approved_Application_Activity"></activity>
-
-        <activity android:name=".Approoved_Application.Warish_class"></activity>
-        <activity android:name=".Approoved_Application.Activity_Approved_Application_details"></activity>
-        <activity android:name=".Approoved_Application.App_Des_with_CommentBox"></activity>
-
+        <activity android:name=".Application_Details_Activity_2"></activity>
+        <activity android:name=".LenDen_Application_Details" />
+        <activity android:name=".Activity_Reject_Details" />
+        <activity android:name=".Approoved_Application.Warish_class" />
+        <activity android:name=".Approoved_Application.Activity_Approved_Application_details" />
+        <activity android:name=".Approoved_Application.App_Des_with_CommentBox" />
         <activity android:name=".ApplicantDetailsActivity" />
         <activity android:name=".All_Item.Activity_Item6" />
         <activity android:name=".All_Item.Activity_Item5" />

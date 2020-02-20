@@ -61,7 +61,7 @@
         android:layout_height="match_parent"
         android:id="@+id/navigationView"
         app:menu="@menu/menu_item"
-        app:headerLayout="@layout/header"
+        app:headerLayout="@layout/nav_header"
         android:background="@color/colorPrimary"
         android:layout_gravity="start"
        />
