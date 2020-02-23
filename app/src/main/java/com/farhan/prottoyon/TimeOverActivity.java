@@ -3,11 +3,15 @@ package com.farhan.prottoyon;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
+
+import com.farhan.prottoyon.All_Item.Activity_item2;
 
 public class TimeOverActivity extends AppCompatActivity {
 
@@ -16,6 +20,15 @@ public class TimeOverActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_time_over);
+
+        //Back Button Start
+        ImageView BackId = findViewById(R.id.backeId);
+        BackId.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(TimeOverActivity.this, Activity_item2.class));
+            }
+        });
     }
 
     public void jachai_korun6(View view) {

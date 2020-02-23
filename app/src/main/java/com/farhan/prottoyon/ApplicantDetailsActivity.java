@@ -27,7 +27,7 @@ public class ApplicantDetailsActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                startActivity(new Intent(ApplicantDetailsActivity.this, Activity_Item6.class));
+                startActivity(new Intent(ApplicantDetailsActivity.this, Activity_Item3.class));
             }
         });
         //Back Button End
