@@ -3,14 +3,17 @@ package com.farhan.prottoyon.Approoved_Application;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.farhan.prottoyon.All_Item.Activity_Item1;
 import com.farhan.prottoyon.LenDen_Application_Details;
 import com.farhan.prottoyon.R;
 
@@ -18,6 +21,8 @@ public class Activity_Approved_Application_details extends AppCompatActivity {
 
     TextView appli_name, certificate_name;
     //Button lenden ;
+    ImageView backButton;
+    Context context;
 
 
     @Override
@@ -29,6 +34,16 @@ public class Activity_Approved_Application_details extends AppCompatActivity {
         certificate_name = findViewById(R.id.certificate_name);
        // lenden = findViewById(R.id.lenden);
 
+
+//Back Button Start
+        backButton= findViewById(R.id.Backবিস্তারিতtoShamprotic);
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Activity_Approved_Application_details.this, Activity_Item1.class));
+            }
+        });
+//Back Button End
 
         appli_name.setOnClickListener(new View.OnClickListener() {
             @Override

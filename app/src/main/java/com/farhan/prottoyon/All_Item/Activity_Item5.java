@@ -4,10 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 
 import com.farhan.prottoyon.Adapter.Adapter_item5;
 import com.farhan.prottoyon.Adapter.Adapter_item6;
+import com.farhan.prottoyon.MainActivity;
 import com.farhan.prottoyon.Model.ItemModel;
 import com.farhan.prottoyon.R;
 
@@ -25,6 +29,16 @@ public class Activity_Item5 extends AppCompatActivity {
         setContentView(R.layout.activity__item5);
 
         items = new ArrayList<>();
+
+        //Back Button Start
+        ImageView BackId = findViewById(R.id.backButtonId);
+        BackId.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Activity_Item5.this, MainActivity.class));
+            }
+        });
+        //Back Button End
 
         getData();
 

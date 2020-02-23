@@ -22,7 +22,7 @@
             tools:context=".Dashboard">
 
             <LinearLayout
-                android:id="@+id/xxx"
+                android:id="@+id/ItemId1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
@@ -53,27 +53,21 @@
                             android:layout_marginTop="20dp"
                             android:fontFamily="@font/bengali"
                             android:text="৭৬"
+                            android:padding="5dp"
                             android:textColor="#FFFFFF"
                             android:textSize="60sp"
-
-
                             android:textStyle="bold">
-
-
                         </TextView>
 
                         <TextView
                             android:id="@+id/Text_Number2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-
                             android:layout_marginTop="60dp"
                             android:layout_toEndOf="@+id/Text_Number"
                             android:layout_toRightOf="@+id/Text_Number"
                             android:fontFamily="@font/bengali"
                             android:text="টি"
-
-
                             android:textColor="#FFFFFF"
                             android:textSize="30sp"
                             android:textStyle="bold" />
@@ -83,7 +77,6 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@+id/Text_Number"
                             android:layout_centerHorizontal="true"
-
                             android:fontFamily="@font/bengali"
                             android:text="সাম্প্রতিক আবেদন"
                             android:textColor="@android:color/white"
@@ -115,7 +108,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="8dp"
                 android:orientation="vertical"
-                android:layout_below="@id/xxx"
+                android:layout_below="@id/ItemId1"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:background="#710897" />
@@ -124,7 +117,7 @@
                 android:id="@+id/Linear"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/xxx"
+                android:layout_below="@id/ItemId1"
                 android:layout_marginTop="10dp"
                 android:background="#ECECEC"
                 android:weightSum="2">
@@ -159,12 +152,13 @@
                             android:id="@+id/Text_Number11"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:padding="10dp"
+                            android:padding="5dp"
+                            android:gravity="center"
+                            android:layout_marginLeft="5dp"
                             android:text="২৭৬"
                             android:textColor="#710897"
                             android:textSize="40sp"
                             android:textStyle="bold">
-
 
                         </TextView>
 
@@ -172,10 +166,8 @@
                             android:id="@+id/Text_Number222"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:padding="10dp"
                             android:text="টি"
                             android:textColor="#710897"
-
                             android:textSize="20sp"
                             android:textStyle="bold" />
 
@@ -193,6 +185,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:fontFamily="@font/bengali"
+                            android:padding="3dp"
                             android:text="অনুুমোদিত আবেদন"
                             android:textColor="#710897"
                             android:textSize="18sp"
@@ -233,8 +226,9 @@
                             android:id="@+id/Text11"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:padding="10dp"
+                            android:padding="5dp"
                             android:text="২৭৬"
+                            android:layout_marginLeft="5dp"
                             android:textColor="#710897"
                             android:textSize="40sp"
                             android:textStyle="bold">
@@ -246,7 +240,6 @@
                             android:id="@+id/Text22"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:padding="10dp"
                             android:text="টি"
                             android:textColor="#710897"
                             android:textSize="20sp"
@@ -265,6 +258,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
+                            android:padding="3dp"
+
                             android:fontFamily="@font/bengali"
                             android:text="বিবেচনাধীন আবেদন"
                             android:textColor="#710897"
@@ -316,11 +311,11 @@
                             android:id="@+id/Text_Number_2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:padding="10dp"
+                            android:padding="5dp"
                             android:text="২৭৬"
                             android:textColor="#710897"
                             android:textSize="40sp"
-
+                            android:layout_marginLeft="5dp"
                             android:textStyle="bold">
 
 
@@ -330,7 +325,6 @@
                             android:id="@+id/Text_Number22"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:padding="10dp"
                             android:text="টি"
                             android:textColor="#710897"
                             android:textSize="20sp"
@@ -351,6 +345,7 @@
                             android:layout_marginLeft="10dp"
                             android:fontFamily="@font/bengali"
                             android:text="অনুুমোদিত আবেদন"
+                            android:padding="3dp"
                             android:textColor="#710897"
                             android:textSize="18sp"
                             android:textStyle="bold" />
@@ -390,8 +385,9 @@
                             android:id="@+id/Text1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:padding="10dp"
+                            android:padding="5dp"
                             android:text="২৭৬"
+                            android:layout_marginLeft="5dp"
                             android:textColor="#710897"
                             android:textSize="40sp"
                             android:textStyle="bold">
@@ -403,7 +399,6 @@
                             android:id="@+id/Text2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:padding="10dp"
                             android:text="টি"
                             android:textColor="#710897"
                             android:textSize="20sp"
@@ -424,6 +419,7 @@
                             android:layout_marginLeft="10dp"
                             android:fontFamily="@font/bengali"
                             android:text="পুনরায় জমা আবেদন"
+                            android:padding="3dp"
                             android:textColor="#710897"
                             android:textSize="18sp"
                             android:textStyle="bold" />
@@ -474,8 +470,9 @@
                             android:id="@+id/Text_Number_233"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:padding="10dp"
+                            android:padding="5dp"
                             android:text="২৭৬"
+                            android:layout_marginLeft="5dp"
                             android:textColor="#710897"
                             android:textSize="40sp"
                             android:textStyle="bold">
@@ -487,7 +484,6 @@
                             android:id="@+id/Text_Number2233"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:padding="10dp"
                             android:text="টি"
                             android:textColor="#710897"
                             android:textSize="20sp"
@@ -508,6 +504,7 @@
                             android:layout_marginLeft="10dp"
                             android:fontFamily="@font/bengali"
                             android:text=" সময় শেষ"
+                            android:padding="3dp"
                             android:textColor="#710897"
                             android:textSize="18sp"
                             android:textStyle="bold" />
