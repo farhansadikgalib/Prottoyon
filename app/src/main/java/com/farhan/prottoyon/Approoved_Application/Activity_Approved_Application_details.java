@@ -109,9 +109,6 @@ public class Activity_Approved_Application_details extends AppCompatActivity {
     }
 
     public void submitx(View view) {
-
-
-        startActivity(new Intent(this, LenDen_Application_Details.class));
         finish();
     }
 

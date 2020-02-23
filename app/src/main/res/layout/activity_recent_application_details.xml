@@ -521,7 +521,7 @@
 
                 <Button
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="?attr/actionBarSize"
                     android:text="লেনদেন সম্পূর্ণ করুন "
                     android:textSize="16dp"
                     android:id="@+id/lenden"
