@@ -9,6 +9,7 @@ import android.widget.ImageView;
 
 import com.farhan.prottoyon.All_Item.Activity_Item1;
 import com.farhan.prottoyon.R;
+import com.farhan.prottoyon.i1_Activity_Approved_Application_details;
 
 public class App_Des_with_CommentBox extends AppCompatActivity {
 
@@ -21,7 +22,7 @@ public class App_Des_with_CommentBox extends AppCompatActivity {
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(App_Des_with_CommentBox.this, Activity_Approved_Application_details.class));
+                startActivity(new Intent(App_Des_with_CommentBox.this, i1_Activity_Approved_Application_details.class));
             }
         });
         //Back Button End
