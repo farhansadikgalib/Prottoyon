@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:id="@+id/parentLinear"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toTopOf="@+id/viewInBottom"
     tools:context=".All_Item.Activity_Item5">
 
     <androidx.appcompat.widget.Toolbar
@@ -68,3 +77,18 @@
         android:layout_height="match_parent"
         android:id="@+id/recyclerView5"/>
 </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/viewInBottom"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/parentLinear"
+
+        android:orientation="vertical" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

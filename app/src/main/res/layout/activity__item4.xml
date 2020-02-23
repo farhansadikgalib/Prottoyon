@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".All_Item.Activity_Item4">
+    tools:context=".All_Item.Activity_Item4"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toTopOf="@id/viewInBottom">
 
 
     <androidx.appcompat.widget.Toolbar
@@ -66,6 +76,24 @@
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/recyclerView4"/>
+        android:id="@+id/recyclerView4"
+        />
+
 
 </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/viewInBottom"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        android:orientation="vertical" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
