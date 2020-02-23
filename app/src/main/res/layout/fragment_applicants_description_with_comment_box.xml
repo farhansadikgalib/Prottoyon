@@ -17,6 +17,7 @@
             android:layout_centerVertical="true"
             android:layout_margin="10dp"
             android:src="@drawable/back"
+            android:id="@+id/Shamprotic"
             tools:ignore="ContentDescription" />
 
         <TextView
