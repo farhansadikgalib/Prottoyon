@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -19,7 +20,8 @@ import com.farhan.prottoyon.Warish_class;
 public class i3_ApplicantDetailsActivity extends AppCompatActivity {
 
     TextView appli_name, certificate_name;
-
+    Button lenden ;
+    AlertDialog alertDialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -90,7 +92,7 @@ public class i3_ApplicantDetailsActivity extends AppCompatActivity {
         View dialogView = LayoutInflater.from(this).inflate(R.layout.custom_alert_dialog_2, viewGroup, false);
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setView(dialogView);
-        AlertDialog alertDialog = builder.create();
+        alertDialog = builder.create();
         alertDialog.show();
 
 
@@ -109,7 +111,12 @@ public class i3_ApplicantDetailsActivity extends AppCompatActivity {
     }
 
     public void submitx(View view) {
-        finish();
+        lenden = findViewById(R.id.lenden3);
+        lenden.setVisibility(View.GONE);
+        alertDialog.dismiss();
+
+
+
     }
 
 
