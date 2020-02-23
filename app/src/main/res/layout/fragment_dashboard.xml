@@ -344,7 +344,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:fontFamily="@font/bengali"
-                            android:text="অনুুমোদিত আবেদন"
+                            android:text="অননুমদিত আবেদন"
                             android:padding="3dp"
                             android:textColor="#710897"
                             android:textSize="18sp"

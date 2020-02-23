@@ -12,7 +12,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Application_Details_Activity_2">
+    tools:context=".i2_Application_Details_Activity_2">
 
 
     <androidx.appcompat.widget.Toolbar
@@ -24,6 +24,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/back"
+            android:id="@+id/backeId"
             android:layout_centerVertical="true" />
         <LinearLayout
             android:layout_width="match_parent"

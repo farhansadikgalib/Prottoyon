@@ -1,21 +1,15 @@
 package com.farhan.prottoyon.All_Item;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.farhan.prottoyon.Adapter.Adapter_item2;
-import com.farhan.prottoyon.Adapter.Adapter_item3;
-import com.farhan.prottoyon.Approoved_Application.Activity_Approved_Application_details;
 import com.farhan.prottoyon.MainActivity;
 import com.farhan.prottoyon.Model.ItemModel;
 import com.farhan.prottoyon.R;
@@ -37,13 +31,13 @@ public class Activity_item2 extends AppCompatActivity {
     itemsx = new ArrayList<>();
     getDatax();
         //Back Button Start
-    backbutton= findViewById(R.id.BackButton);
-    backbutton.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            startActivity(new Intent(Activity_item2.this, MainActivity.class));
-        }
-    });
+        backbutton = findViewById(R.id.BackButton);
+        backbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Activity_item2.this, MainActivity.class));
+            }
+        });
         //Back Button End
 
     LinearLayoutManager linearLayoutManager = new LinearLayoutManager(Activity_item2.this);

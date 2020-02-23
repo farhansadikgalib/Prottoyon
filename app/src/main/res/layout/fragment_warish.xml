@@ -20,6 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/back"
+            android:id="@+id/back"
             android:layout_centerVertical="true"
             android:layout_margin="10dp"/>
         <TextView
@@ -46,7 +47,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="16dp"
-                android:background="#FFFFFF"
+                android:background="#403C3C"
 
                 >
 
@@ -160,7 +161,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/bengali"
-                            android:text="মমৃত ব্যক্তির পিতা/ স্বামী (বাংলায়)"
+                            android:text="মৃত ব্যক্তির পিতা/ স্বামী (বাংলায়)"
                             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                             android:textColor="@color/grey_text" />
 
@@ -214,7 +215,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_gravity="center"
-                                android:layout_weight="1"
+                                android:layout_weight="5"
                                 android:background="@color/grey"
                                 android:fontFamily="@font/bengali"
                                 android:text="০৮ জানুয়ারি ২০০৫"
@@ -223,16 +224,6 @@
                                 android:textColor="#111111" />
 
 
-                                <ImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="4"
-                                    android:src="@drawable/date_warish"
-                                    android:background="#E0E0E0"
-                                    >
-
-
-                                </ImageView>
 
 
 
@@ -512,11 +503,11 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:background="#FBFBFB"
                         android:orientation="vertical"
                         android:paddingLeft="20sp"
                         android:paddingRight="20sp"
                         android:paddingBottom="15sp"
-                        android:background="#FBFBFB"
 
                         >
 
@@ -529,285 +520,270 @@
                             android:textColor="@color/grey_text" />
 
                         <TextView
-                            android:background="#8CC63F"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:background="#EFF5E7"
                             android:fontFamily="@font/bengali"
-                            android:text="জানাব আকমল মিয়ার দ্বিতীয় সন্তান"
-                            android:paddingTop="5sp"
                             android:paddingLeft="5sp"
+                            android:paddingTop="5sp"
                             android:paddingRight="5sp"
                             android:paddingBottom="30sp"
+                            android:text="জানাব আকমল মিয়ার দ্বিতীয় সন্তান"
                             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                            android:textColor="#ffffff" />
-
+                            android:textColor="#403C3C" />
 
 
                     </LinearLayout>
-
-                </LinearLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="16dp"
-                android:background="#FFFFFF"
-
-                >
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:padding="16dp"
-                    >
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/bengali"
-                        android:text="মৃত ব্যক্তির ওয়ারিশ গণের বিবরণ"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textColor="#111111" />
-
-
-                    <View
-                        android:layout_width="fill_parent"
-                        android:layout_height="2dp"
-                        android:layout_marginBottom="10dp"
-                        android:background="#A39E96" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical"
-                        android:background="#F2F7EB"
-                        android:paddingLeft="20sp"
-                        android:paddingRight="20sp"
+                        android:padding="16dp"
                         >
+
+                        <!--                    <TextView-->
+                        <!--                        android:layout_width="match_parent"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:fontFamily="@font/bengali"-->
+                        <!--                        android:text="মৃত ব্যক্তির ওয়ারিশ গণের বিবরণ"-->
+                        <!--                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+                        <!--                        android:textColor="#111111" />-->
+
+
+                        <!--                    <View-->
+                        <!--                        android:layout_width="fill_parent"-->
+                        <!--                        android:layout_height="2dp"-->
+                        <!--                        android:layout_marginBottom="10dp"-->
+                        <!--                        android:background="#A39E96" />-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:background="#F2F7EB"
+                            android:paddingLeft="20sp"
+                            android:paddingRight="20sp"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="2"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="5dp"
+                                >
+
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/bengali"
+                                    android:text="HALIM MIAH"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                    android:textColor="#111111"
+
+                                    />
+
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/bengali"
+                                    android:text="হালিম মিয়া"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                    android:textColor="#111111"
+                                    android:gravity="right"
+                                    />
+
+
+
+                            </LinearLayout>
+                        </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:orientation="horizontal"
-                            android:weightSum="2"
-                            android:paddingTop="5dp"
-                            android:paddingBottom="5dp"
+                            android:paddingLeft="20sp"
+                            android:paddingRight="20sp"
+                            android:background="#FBFBFB"
+                            android:paddingTop="10sp"
+
                             >
 
                             <TextView
-                                android:layout_weight="1"
-                                android:layout_width="match_parent"
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/bengali"
-                                android:text="HALIM MIAH"
+                                android:text="জাতীয় পরিচয়পত্র নং  : "
                                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                                android:textColor="#111111"
-
-                                />
+                                android:textColor="@color/grey_text" />
 
                             <TextView
-                                android:layout_weight="1"
-                                android:layout_width="match_parent"
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/bengali"
-                                android:text="হালিম মিয়া"
+                                android:text="199425356002010"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                                android:textColor="#111111"
-                                android:gravity="right"
-                                />
 
+                                android:textColor="#111111" />
 
 
                         </LinearLayout>
-                    </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:paddingLeft="20sp"
-                        android:paddingRight="20sp"
-                        android:background="#FBFBFB"
-                        android:paddingTop="10sp"
-
-                        >
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/bengali"
-                            android:text="জাতীয় পরিচয়পত্র নং  : "
-                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                            android:textColor="@color/grey_text" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/bengali"
-                            android:text="199425356002010"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-
-                            android:textColor="#111111" />
-
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:paddingLeft="20sp"
-                        android:paddingRight="20sp"
-                        android:background="#FBFBFB"
-
-                        >
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/bengali"
-                            android:text="মোবাইল  : "
-                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                            android:textColor="@color/grey_text" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/bengali"
-                            android:text="+৮৮ ০১৭৬০০০০৫৫৫ "
-                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                            android:textColor="#111111" />
-
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:paddingLeft="20sp"
-                        android:paddingRight="20sp"
-                        android:background="#FBFBFB"
-
-                        >
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/bengali"
-                            android:text="জন্ম তারিখ  : "
-                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                            android:textColor="@color/grey_text" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/bengali"
-                            android:text="২ জুন ১৯৯৩ ইং "
-                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                            android:textColor="#111111" />
-
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:paddingLeft="20sp"
-                        android:paddingRight="20sp"
-                        android:background="#FBFBFB"
-
-                        >
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/bengali"
-                            android:text="বয়স  : "
-                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                            android:textColor="@color/grey_text" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/bengali"
-                            android:text="২৮ বছর ৬ মাস ৩ দিন "
-                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                            android:textColor="#111111"
-
-                            />
-
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:paddingLeft="20sp"
-                        android:paddingRight="20sp"
-                        android:background="#FBFBFB"
-
-                        >
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/bengali"
-                            android:text="সম্পর্ক  : "
-                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                            android:textColor="@color/grey_text" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/bengali"
-                            android:text="ছেলে"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                            android:textColor="#111111" />
-
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:paddingLeft="20sp"
-                        android:paddingRight="20sp"
-                        android:background="#FBFBFB"
-                        android:paddingBottom="15sp"
-                        >
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/bengali"
-                            android:text="মন্তব্য : "
-                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                            android:textColor="@color/grey_text" />
-
-                        <TextView
-                            android:background="#8CC63F"
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/bengali"
-                            android:text="জানাব আকমল মিয়ার দ্বিতীয় সন্তান"
-                            android:paddingTop="5sp"
-                            android:paddingLeft="5sp"
-                            android:paddingRight="5sp"
-                            android:paddingBottom="30sp"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                            android:textColor="#ffffff" />
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:paddingLeft="20sp"
+                            android:paddingRight="20sp"
+                            android:background="#FBFBFB"
+
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/bengali"
+                                android:text="মোবাইল  : "
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/grey_text" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/bengali"
+                                android:text="+৮৮ ০১৭৬০০০০৫৫৫ "
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="#111111" />
 
 
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:paddingLeft="20sp"
+                            android:paddingRight="20sp"
+                            android:background="#FBFBFB"
+
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/bengali"
+                                android:text="জন্ম তারিখ  : "
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/grey_text" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/bengali"
+                                android:text="২ জুন ১৯৯৩ ইং "
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="#111111" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:paddingLeft="20sp"
+                            android:paddingRight="20sp"
+                            android:background="#FBFBFB"
+
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/bengali"
+                                android:text="বয়স  : "
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/grey_text" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/bengali"
+                                android:text="২৮ বছর ৬ মাস ৩ দিন "
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="#111111"
+
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:paddingLeft="20sp"
+                            android:paddingRight="20sp"
+                            android:background="#FBFBFB"
+
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/bengali"
+                                android:text="সম্পর্ক  : "
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/grey_text" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/bengali"
+                                android:text="ছেলে"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="#111111" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingLeft="20sp"
+                            android:paddingRight="20sp"
+                            android:background="#FBFBFB"
+                            android:paddingBottom="15sp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/bengali"
+                                android:text="মন্তব্য : "
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/grey_text" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#EFF5E7"
+                                android:fontFamily="@font/bengali"
+                                android:paddingLeft="5sp"
+                                android:paddingTop="5sp"
+                                android:paddingRight="5sp"
+                                android:paddingBottom="30sp"
+                                android:text="জানাব আকমল মিয়ার দ্বিতীয় সন্তান"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="#403C3C" />
+
+
+                        </LinearLayout>
 
                     </LinearLayout>
 
@@ -815,6 +791,8 @@
 
 
             </androidx.cardview.widget.CardView>
+
+
 
 
             <View

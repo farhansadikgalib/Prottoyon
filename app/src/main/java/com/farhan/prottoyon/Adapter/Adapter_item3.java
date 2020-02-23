@@ -11,7 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.farhan.prottoyon.ApplicantDetailsActivity;
+import com.farhan.prottoyon.i3_ApplicantDetailsActivity;
 import com.farhan.prottoyon.Model.ItemModel;
 import com.farhan.prottoyon.R;
 
@@ -42,9 +42,9 @@ public class Adapter_item3 extends  RecyclerView.Adapter<Adapter_item3.ViewHolde
             @Override
             public void onClick(View v) {
 
-                Toast.makeText(context, ""+itemModel.getApplicantName() ,Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, ""+ itemModel.getApplicantName() ,Toast.LENGTH_SHORT).show();
 
-                Intent i = new Intent(context, ApplicantDetailsActivity.class);
+                Intent i = new Intent(context, i3_ApplicantDetailsActivity.class);
                 context.startActivity(i);
             }
         });

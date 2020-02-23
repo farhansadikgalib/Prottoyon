@@ -10,7 +10,7 @@ import android.widget.Toast;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.farhan.prottoyon.Activity_Reject_Details;
+import com.farhan.prottoyon.i4_Activity_Reject_Details;
 import com.farhan.prottoyon.Model.ItemModel;
 import com.farhan.prottoyon.R;
 
@@ -43,7 +43,7 @@ public class Adapter_item4 extends  RecyclerView.Adapter<Adapter_item6.ViewHolde
 
                 Toast.makeText(context, ""+itemModel.getApplicantName() ,Toast.LENGTH_SHORT).show();
 
-                Intent i = new Intent(context, Activity_Reject_Details.class);
+                Intent i = new Intent(context, i4_Activity_Reject_Details.class);
                 context.startActivity(i);
             }
         });
