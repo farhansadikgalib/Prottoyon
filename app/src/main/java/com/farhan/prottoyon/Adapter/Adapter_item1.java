@@ -42,7 +42,7 @@ public class Adapter_item1 extends  RecyclerView.Adapter<Adapter_item1.ViewHolde
             @Override
             public void onClick(View v) {
 
-                Toast.makeText(context, ""+itemModel.getApplicantName() ,Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, ""+ itemModel.getApplicantName() ,Toast.LENGTH_SHORT).show();
 
                 Intent i = new Intent(context, i1_Activity_Approved_Application_details.class);
                 context.startActivity(i);

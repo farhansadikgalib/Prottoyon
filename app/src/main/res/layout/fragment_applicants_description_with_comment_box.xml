@@ -1183,6 +1183,7 @@
                     android:textColor="#ffffff"
                     android:background="#860DB2"
                     android:textStyle="bold"
+                    android:id="@+id/SubmitToUpdate"
                     android:layout_gravity="center"
                     android:textSize="18sp"
                     >

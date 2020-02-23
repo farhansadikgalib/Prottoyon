@@ -9,7 +9,8 @@
         android:roundIcon="@drawable/round_logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ItemLayouts.i6_TimeOverActivity"></activity>
+        <activity android:name=".Update"></activity>
+        <activity android:name=".ItemLayouts.i6_TimeOverActivity" />
         <activity android:name=".ItemLayouts.i5_RenewApplicationActivity" />
         <activity android:name=".ItemLayouts.i2_Application_Details_Activity_2" />
         <activity android:name=".LenDen_Application_Details" />
