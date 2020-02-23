@@ -8,6 +8,7 @@
     <View
         android:layout_width="fill_parent"
         android:layout_height="10dp"
-        android:background="#8CC63F" />
+        android:background="#8CC63F"
+        />
 
 </LinearLayout>
