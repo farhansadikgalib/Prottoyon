@@ -1,9 +1,6 @@
 package com.farhan.prottoyon.Approoved_Application;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.AlertDialog;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,6 +10,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.farhan.prottoyon.All_Item.Activity_Item1;
 import com.farhan.prottoyon.LenDen_Application_Details;
 import com.farhan.prottoyon.R;
@@ -20,9 +19,9 @@ import com.farhan.prottoyon.R;
 public class Activity_Approved_Application_details extends AppCompatActivity {
 
     TextView appli_name, certificate_name;
-    //Button lenden ;
+    Button lenden ;
     ImageView backButton;
-    Context context;
+    AlertDialog alertDialog;
 
 
     @Override
@@ -32,18 +31,18 @@ public class Activity_Approved_Application_details extends AppCompatActivity {
 
         appli_name = findViewById(R.id.applicant_name);
         certificate_name = findViewById(R.id.certificate_name);
-       // lenden = findViewById(R.id.lenden);
+        // lenden = findViewById(R.id.lenden);
 
 
-//Back Button Start
-        backButton= findViewById(R.id.Backবিস্তারিতtoShamprotic);
+        //Back Button Start
+        backButton = findViewById(R.id.Shamprotic);
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Activity_Approved_Application_details.this, Activity_Item1.class));
             }
         });
-//Back Button End
+        //Back Button End
 
         appli_name.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -92,12 +91,11 @@ public class Activity_Approved_Application_details extends AppCompatActivity {
         View dialogView = LayoutInflater.from(this).inflate(R.layout.custom_alert_dialog_3, viewGroup, false);
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setView(dialogView);
-        AlertDialog alertDialog = builder.create();
+       alertDialog = builder.create();
         alertDialog.show();
 
 
     }
-
 
 
     public void accecpt(View view) {
@@ -115,8 +113,12 @@ public class Activity_Approved_Application_details extends AppCompatActivity {
     public void submitx(View view) {
 
 
-        startActivity(new Intent(this, LenDen_Application_Details.class));
-        finish();
+            lenden = findViewById(R.id.lenden1);
+            lenden.setVisibility(View.GONE);
+            alertDialog.dismiss();
+
+
+
     }
 
 

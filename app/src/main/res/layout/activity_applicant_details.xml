@@ -6,7 +6,43 @@
     android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".ApplicantDetailsActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8CC63F">
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:id="@+id/item3"
+            android:layout_centerVertical="true" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" আবেদনের বিস্তারিত"
+                android:gravity="center"
+                android:fontFamily="@font/bengali"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_centerInParent="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+        </LinearLayout>
+
+
+
+
+
+
+
+    </androidx.appcompat.widget.Toolbar>
 
 
     <ScrollView
@@ -73,16 +109,19 @@
                     android:textSize="12dp"
                     android:textStyle="bold"
                     app:layout_constraintStart_toEndOf="@+id/imageView2"
-                    app:layout_constraintTop_toBottomOf="@+id/certificate_name" />
+                    app:layout_constraintTop_toBottomOf="@+id/certificate_name"
+                    app:layout_constraintRight_toLeftOf="@id/idShow"/>
 
                 <TextView
-                    android:layout_marginLeft="1dp"
+                    android:id="@+id/idShow"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:padding="2dp"
                     android:text=" 199785632145698785"
                     android:textSize="12dp"
-                    android:padding="2dp"
                     app:layout_constraintStart_toEndOf="@+id/nid"
+                    app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/certificate_name" />
 
 
@@ -505,6 +544,7 @@
                         android:layout_marginLeft="15dp"
                         android:layout_marginRight="15dp"
                         android:background="#860DB2"
+                        android:onClick="lenden3"
                         android:fontFamily="@font/bengali"
                         android:gravity="center"
                         android:orientation="horizontal"
@@ -541,6 +581,7 @@
                         android:background="#860DB2"
                         android:fontFamily="@font/bengali"
                         android:gravity="center"
+                        android:onClick="jachai_korun3"
                         android:orientation="horizontal"
                         android:textColor="#ffffff"
                         app:layout_constraintEnd_toEndOf="@+id/button"
@@ -574,6 +615,7 @@
                         android:layout_marginRight="15dp"
                         android:layout_gravity="center"
                         android:orientation="horizontal"
+                        android:onClick="prottakhan3"
                         android:gravity="center"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="@+id/button2"

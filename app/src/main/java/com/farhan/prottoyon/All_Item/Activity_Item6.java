@@ -84,9 +84,6 @@ public class Activity_Item6 extends AppCompatActivity {
        items.add(new ItemModel(" সাগর "," উত্তরাধিকার সনদ  ","১৬-১৯-২০","১২৩৪৫৬৭৮৯৫২৭৪"));
 
 
-
-
-
    }
 
 

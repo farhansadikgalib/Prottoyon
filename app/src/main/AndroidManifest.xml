@@ -9,7 +9,9 @@
         android:roundIcon="@drawable/round_logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Application_Details_Activity_2"></activity>
+        <activity android:name=".TimeOverActivity"></activity>
+        <activity android:name=".RenewApplicationActivity" />
+        <activity android:name=".Application_Details_Activity_2" />
         <activity android:name=".LenDen_Application_Details" />
         <activity android:name=".Activity_Reject_Details" />
         <activity android:name=".Approoved_Application.Warish_class" />
@@ -20,9 +22,7 @@
         <activity android:name=".All_Item.Activity_Item5" />
         <activity android:name=".All_Item.Activity_Item4" />
         <activity android:name=".All_Item.Activity_Item3" />
-        <activity android:name=".All_Item.Activity_Item1"
-           >
-        </activity>
+        <activity android:name=".All_Item.Activity_Item1" />
         <activity android:name=".All_Item.Activity_item2" />
         <activity android:name=".LoginActivity" />
         <activity
