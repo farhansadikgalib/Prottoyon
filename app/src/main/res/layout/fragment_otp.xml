@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".OtpFragment"
+    tools:context=".Fragment.OtpFragment"
     android:background="#ffffff"
     >
 
@@ -40,7 +40,7 @@
     <com.mukesh.OtpView
 
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="?attr/actionBarSize"
         android:inputType="number"
         app:itemSpacing="5dp"
         android:layout_marginLeft="30dp"

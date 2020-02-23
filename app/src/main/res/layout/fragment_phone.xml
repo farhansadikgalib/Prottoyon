@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#ffffff"
-    tools:context=".PhoneFragment">
+    tools:context=".Fragment.PhoneFragment">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -36,7 +36,7 @@
     <EditText
         android:id="@+id/forgetPhoneET"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="?attr/actionBarSize"
         android:layout_marginStart="35dp"
         android:layout_marginLeft="35dp"
         android:layout_marginTop="5dp"

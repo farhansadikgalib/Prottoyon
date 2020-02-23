@@ -40,7 +40,7 @@ public class Dashboard extends Fragment implements  View.OnClickListener {
 
         frameLayoutx = view.findViewById(R.id.mainframeLayout);
 
-        Item1 = view.findViewById(R.id.xxx);
+        Item1 = view.findViewById(R.id.ItemId1);
         Item2 = view.findViewById(R.id.ItemId2);
         Item3 = view.findViewById(R.id.ItemId3);
         Item4 = view.findViewById(R.id.ItemId4);
@@ -59,7 +59,7 @@ public class Dashboard extends Fragment implements  View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        if (v.getId()==R.id.xxx){
+        if (v.getId()==R.id.ItemId1){
             startActivity(new Intent(getActivity(), Activity_Item1.class));
         }
         if (v.getId()==R.id.ItemId2){
@@ -78,6 +78,8 @@ public class Dashboard extends Fragment implements  View.OnClickListener {
             startActivity(new Intent(getActivity(), Activity_Item6.class));
         }
 
-
     }
+
+
+
 }
