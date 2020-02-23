@@ -12,10 +12,9 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.farhan.prottoyon.ApplicantDetailsActivity;
 import com.farhan.prottoyon.Model.ItemModel;
 import com.farhan.prottoyon.R;
-import com.farhan.prottoyon.RenewApplicationActivity;
+import com.farhan.prottoyon.i5_RenewApplicationActivity;
 
 import java.util.List;
 
@@ -48,7 +47,7 @@ public class Adapter_item5 extends  RecyclerView.Adapter<Adapter_item6.ViewHolde
 
                 Toast.makeText(context, ""+ itemModel.getApplicantName() ,Toast.LENGTH_SHORT).show();
 
-                Intent i = new Intent(context, RenewApplicationActivity.class);
+                Intent i = new Intent(context, i5_RenewApplicationActivity.class);
                 context.startActivity(i);
 
 

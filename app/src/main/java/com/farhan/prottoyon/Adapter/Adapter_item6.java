@@ -11,10 +11,9 @@ import android.widget.Toast;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.farhan.prottoyon.ApplicantDetailsActivity;
 import com.farhan.prottoyon.Model.ItemModel;
 import com.farhan.prottoyon.R;
-import com.farhan.prottoyon.TimeOverActivity;
+import com.farhan.prottoyon.i6_TimeOverActivity;
 
 import java.util.List;
 
@@ -45,7 +44,7 @@ public class Adapter_item6 extends  RecyclerView.Adapter<Adapter_item6.ViewHolde
 
                 Toast.makeText(context, ""+itemModel.getApplicantName() ,Toast.LENGTH_SHORT).show();
 
-                Intent i = new Intent(context, TimeOverActivity.class);
+                Intent i = new Intent(context, i6_TimeOverActivity.class);
                 context.startActivity(i);
 
 
