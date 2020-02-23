@@ -1179,7 +1179,7 @@
                             android:layout_marginTop="15dp"
                             android:layout_width="160dp"
                             android:layout_height="35dp"
-                            android:text="সাবমিট"
+                            android:text="Hello"
                             android:textColor="#ffffff"
                             android:background="#860DB2"
                             android:textStyle="bold"
