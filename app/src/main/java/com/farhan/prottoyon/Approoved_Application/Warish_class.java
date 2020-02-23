@@ -7,9 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.farhan.prottoyon.All_Item.Activity_Item5;
-import com.farhan.prottoyon.MainActivity;
 import com.farhan.prottoyon.R;
+import com.farhan.prottoyon.i1_Activity_Approved_Application_details;
 
 public class Warish_class extends AppCompatActivity {
 
@@ -25,7 +24,7 @@ public class Warish_class extends AppCompatActivity {
         BackId.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Warish_class.this, Activity_Approved_Application_details.class));
+                startActivity(new Intent(Warish_class.this, i1_Activity_Approved_Application_details.class));
             }
         });
         //Back Button End
