@@ -32,15 +32,15 @@ public class Activity_Approved_Application_details extends AppCompatActivity {
         // lenden = findViewById(R.id.lenden);
 
 
-//Back Button Start
-        backButton = findViewById(R.id.Backবিস্তারিতtoShamprotic);
+        //Back Button Start
+        backButton = findViewById(R.id.Shamprotic);
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Activity_Approved_Application_details.this, Activity_Item1.class));
             }
         });
-//Back Button End
+        //Back Button End
 
         appli_name.setOnClickListener(new View.OnClickListener() {
             @Override

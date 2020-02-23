@@ -17,7 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/back"
-            android:id="@+id/Backবিস্তারিতtoShamprotic"
+            android:id="@+id/Shamprotic"
             android:layout_centerVertical="true" />
         <LinearLayout
             android:layout_width="match_parent"

@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.farhan.prottoyon.All_Item.Activity_Item3;
 import com.farhan.prottoyon.All_Item.Activity_Item6;
+import com.farhan.prottoyon.All_Item.Activity_item2;
 
 public class ApplicantDetailsActivity extends AppCompatActivity {
 
@@ -19,6 +20,17 @@ public class ApplicantDetailsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_applicant_details);
+
+        //Back Button Start
+        ImageView backbutton = findViewById(R.id.item3);
+        backbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent(ApplicantDetailsActivity.this, Activity_Item6.class));
+            }
+        });
+        //Back Button End
 
 
     }
