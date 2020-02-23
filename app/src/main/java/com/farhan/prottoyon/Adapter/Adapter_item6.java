@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.farhan.prottoyon.Model.ItemModel;
 import com.farhan.prottoyon.R;
-import com.farhan.prottoyon.i6_TimeOverActivity;
+import com.farhan.prottoyon.ItemLayouts.i6_TimeOverActivity;
 
 import java.util.List;
 

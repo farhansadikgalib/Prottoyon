@@ -11,7 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.farhan.prottoyon.i2_Application_Details_Activity_2;
+import com.farhan.prottoyon.ItemLayouts.i2_Application_Details_Activity_2;
 import com.farhan.prottoyon.Model.ItemModel;
 import com.farhan.prottoyon.R;
 

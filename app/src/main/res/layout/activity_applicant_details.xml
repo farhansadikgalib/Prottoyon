@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".i3_ApplicantDetailsActivity">
+    tools:context=".ItemLayouts.i3_ApplicantDetailsActivity">
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -72,7 +72,7 @@
 
 
                 <TextView
-                    android:id="@+id/applicant_name"
+                    android:id="@+id/applicant_name3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -85,44 +85,18 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/certificate_name"
+                    android:id="@+id/certificate_name3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/bengali"
                     android:text="উত্তরাধিকার সনদ"
                     android:textColor="#067CAF"
                     android:textSize="16dp"
-                    app:layout_constraintRight_toRightOf="@id/applicant_name"
-                    app:layout_constraintTop_toBottomOf="@id/applicant_name" />
+                    app:layout_constraintRight_toRightOf="@id/applicant_name3"
+                    app:layout_constraintTop_toBottomOf="@id/applicant_name3" />
 
 
-                <TextView
-                    android:id="@+id/nid"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="100dp"
-                    android:layout_marginLeft="100dp"
 
-                    android:fontFamily="@font/bengali"
-                    android:text="NID: "
-                    android:textColor="#050505"
-                    android:textSize="12dp"
-                    android:textStyle="bold"
-                    app:layout_constraintStart_toEndOf="@+id/imageView2"
-                    app:layout_constraintTop_toBottomOf="@+id/certificate_name"
-                    app:layout_constraintRight_toLeftOf="@id/idShow"/>
-
-                <TextView
-                    android:id="@+id/idShow"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="1dp"
-                    android:padding="2dp"
-                    android:text=" 199785632145698785"
-                    android:textSize="12dp"
-                    app:layout_constraintStart_toEndOf="@+id/nid"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/certificate_name" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>

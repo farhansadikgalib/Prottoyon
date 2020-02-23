@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.farhan.prottoyon.Model.ItemModel;
 import com.farhan.prottoyon.R;
-import com.farhan.prottoyon.i5_RenewApplicationActivity;
+import com.farhan.prottoyon.ItemLayouts.i5_RenewApplicationActivity;
 
 import java.util.List;
 
