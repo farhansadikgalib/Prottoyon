@@ -22,7 +22,7 @@ public class ApplicantDetailsActivity extends AppCompatActivity {
         BackId.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(ApplicantDetailsActivity.this, Activity_Item3.class));
+                startActivity(new Intent(ApplicantDetailsActivity.this, Activity_Item6.class));
             }
         });//Back Button End
     }
