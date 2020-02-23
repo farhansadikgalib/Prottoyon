@@ -361,6 +361,7 @@
                             android:layout_marginLeft="15dp"
                             android:layout_marginRight="15dp"
                             android:background="#EFF5E7"
+                            android:layout_marginBottom="15dp"
                             >
 
 
@@ -371,7 +372,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="সার্টিফিকেট ফিঃ"
-                                android:textColor="#ffffff"
+                                android:textColor="#000000"
                                 android:textSize="14dp"
                                 android:fontFamily="@font/bengali"
                                 app:layout_constraintLeft_toLeftOf="parent"
@@ -386,7 +387,7 @@
                                 android:layout_marginRight="20dp"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:textColor="#ffffff"
+                                android:textColor="#000000"
                                 android:textSize="14dp"
                                 android:fontFamily="@font/bengali"
 
@@ -402,7 +403,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:paddingTop="5dp"
-                                android:textColor="#ffffff"
+                                android:textColor="#000000"
                                 android:textSize="14dp"
                                 android:fontFamily="@font/bengali"
                                 android:paddingBottom="5dp"
@@ -416,7 +417,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:paddingTop="5dp"
-                                android:textColor="#ffffff"
+                                android:textColor="#000000"
                                 android:textSize="14dp"
                                 android:fontFamily="@font/bengali"
                                 android:paddingBottom="5dp"
@@ -433,7 +434,7 @@
                                 android:paddingTop="5dp"
                                 android:paddingBottom="5dp"
                                 android:text="প্রত্যয়ন ফিঃ "
-                                android:textColor="#ffffff"
+                                android:textColor="#000000"
                                 android:textSize="14dp"
                                 android:fontFamily="@font/bengali"
                                 app:layout_constraintStart_toStartOf="@+id/charge2"
@@ -446,7 +447,7 @@
                                 android:layout_height="wrap_content"
                                 android:paddingTop="5dp"
                                 android:paddingBottom="5dp"
-                                android:textColor="#ffffff"
+                                android:textColor="#000000"
                                 android:textSize="14dp"
                                 android:fontFamily="@font/bengali"
                                 android:text="২০ টাকা "
@@ -457,7 +458,7 @@
                             <View
                                 android:id="@+id/view2"
                                 android:layout_width="fill_parent"
-                                android:layout_height="1dp"
+                                android:layout_height="2dp"
                                 android:layout_marginLeft="20dp"
                                 android:layout_marginRight="20dp"
                                 android:layout_marginTop="1dp"
@@ -465,7 +466,8 @@
                                 android:layout_alignParentRight="true"
                                 app:layout_constraintLeft_toLeftOf="parent"
                                 app:layout_constraintRight_toRightOf="parent"
-                                android:background="#FFFFF7" />
+                                android:textColor="#000000"
+                                />
 
 
                             <TextView
@@ -475,7 +477,7 @@
                                 android:paddingTop="5dp"
                                 android:paddingBottom="5dp"
                                 android:text="মোট ফিঃ"
-                                android:textColor="#ffffff"
+                                android:textColor="#000000"
                                 android:fontFamily="@font/bengali"
 
                                 android:textSize="16dp"
@@ -490,7 +492,7 @@
                                 android:layout_height="wrap_content"
                                 android:paddingTop="5dp"
                                 android:paddingBottom="15dp"
-                                android:textColor="#ffffff"
+                                android:textColor="#000000"
                                 android:fontFamily="@font/bengali"
                                 android:text="২০.৫০ টাকা"
                                 android:textSize="16dp"
@@ -566,7 +568,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
-                            android:text="অনুমোদন"
+                            android:text="যাচাই করুন"
                             android:textColor="@android:color/white"
                             android:textSize="16sp"
                             android:textStyle="bold" />
