@@ -325,6 +325,7 @@
                             android:layout_marginLeft="15dp"
                             android:layout_marginRight="15dp"
                             android:background="#EFF5E7"
+                            android:layout_marginBottom="15dp"
                             >
 
 
@@ -531,7 +532,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
-                            android:text="অনুমোদন"
+                            android:text="যাচাই করুন"
                             android:textColor="@android:color/white"
                             android:textSize="16sp"
                             android:textStyle="bold" />
