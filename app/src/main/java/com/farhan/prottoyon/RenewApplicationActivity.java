@@ -7,9 +7,11 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 public class RenewApplicationActivity extends AppCompatActivity {
 
+    AlertDialog alertDialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,7 +48,7 @@ public class RenewApplicationActivity extends AppCompatActivity {
         View dialogView = LayoutInflater.from(this).inflate(R.layout.custom_alert_dialog, viewGroup, false);
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setView(dialogView);
-        AlertDialog alertDialog = builder.create();
+        alertDialog = builder.create();
         alertDialog.show();
 
     }
@@ -64,6 +66,10 @@ public class RenewApplicationActivity extends AppCompatActivity {
     }
 
     public void submitx(View view) {
-        finish();
+
+//        Button lenden = findViewById(R.id.lenden1);
+//        lenden.setVisibility(View.GONE);
+//        alertDialog.dismiss();
+
     }
 }

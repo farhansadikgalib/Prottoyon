@@ -524,7 +524,7 @@
                     android:layout_height="?attr/actionBarSize"
                     android:text="লেনদেন সম্পূর্ণ করুন "
                     android:textSize="16dp"
-                    android:id="@+id/lenden"
+                    android:id="@+id/lenden1"
                     android:visibility="visible"
                     android:onClick="lenden"
                     android:fontFamily="@font/bengali"
