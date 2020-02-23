@@ -22,7 +22,6 @@ public class Activity_Approved_Application_details extends AppCompatActivity {
     TextView appli_name, certificate_name;
     //Button lenden ;
     ImageView backButton;
-    Context context;
 
 
     @Override
