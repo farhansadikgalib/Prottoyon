@@ -509,8 +509,8 @@
                     </androidx.cardview.widget.CardView>
 
 
-                    <LinearLayout
-                        android:id="@+id/button"
+                    <Button
+                        android:id="@+id/lenden3"
                         android:layout_width="match_parent"
                         android:layout_height="?attr/actionBarSize"
                         android:layout_gravity="center"
@@ -518,26 +518,16 @@
                         android:layout_marginLeft="15dp"
                         android:layout_marginRight="15dp"
                         android:background="#860DB2"
-                        android:onClick="lenden3"
+                        android:text="লেনদেন সম্পূর্ণ করুন"
+                        android:visibility="visible"
                         android:fontFamily="@font/bengali"
-                        android:gravity="center"
-                        android:orientation="horizontal"
-                        android:textColor="#ffffff"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
                         app:layout_constraintEnd_toEndOf="@+id/cc"
                         app:layout_constraintStart_toStartOf="@+id/cc"
-                        app:layout_constraintTop_toBottomOf="@+id/cc">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
-                            android:text="লেনদেন সম্পূর্ণ করুন"
-                            android:textAlignment="center"
-                            android:textColor="@android:color/white"
-                            android:textSize="16sp"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-
+                        app:layout_constraintTop_toBottomOf="@+id/cc"/>
 
 
 
@@ -558,9 +548,9 @@
                         android:onClick="jachai_korun3"
                         android:orientation="horizontal"
                         android:textColor="#ffffff"
-                        app:layout_constraintEnd_toEndOf="@+id/button"
-                        app:layout_constraintStart_toStartOf="@+id/button"
-                        app:layout_constraintTop_toBottomOf="@+id/button">
+                        app:layout_constraintEnd_toEndOf="@+id/lenden3"
+                        app:layout_constraintStart_toStartOf="@+id/lenden3"
+                        app:layout_constraintTop_toBottomOf="@+id/lenden3">
 
                         <ImageView
                             android:layout_width="wrap_content"

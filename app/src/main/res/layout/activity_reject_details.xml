@@ -505,7 +505,7 @@
 
 
                     <LinearLayout
-                        android:id="@+id/button"
+                        android:id="@+id/lenden3"
                         android:layout_width="match_parent"
                         android:layout_height="?attr/actionBarSize"
                         android:layout_gravity="center"

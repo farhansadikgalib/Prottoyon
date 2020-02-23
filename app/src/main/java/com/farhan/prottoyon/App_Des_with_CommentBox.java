@@ -7,9 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.farhan.prottoyon.All_Item.Activity_Item1;
-import com.farhan.prottoyon.R;
-import com.farhan.prottoyon.i1_Activity_Approved_Application_details;
+import com.farhan.prottoyon.ItemLayouts.i1_Activity_Approved_Application_details;
+
 
 public class App_Des_with_CommentBox extends AppCompatActivity {
 

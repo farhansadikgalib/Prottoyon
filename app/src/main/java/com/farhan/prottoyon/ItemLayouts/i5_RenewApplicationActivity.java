@@ -19,16 +19,16 @@ public class i5_RenewApplicationActivity extends AppCompatActivity {
 
     AlertDialog alertDialog;
     TextView appli_name, certificate_name;
+    Button lenden;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_renew_application);
-
-
-
         appli_name = findViewById(R.id.applicant_name5);
         certificate_name = findViewById(R.id.certificate_name5);
+
+
 
         appli_name.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,7 +54,7 @@ public class i5_RenewApplicationActivity extends AppCompatActivity {
         View dialogView = LayoutInflater.from(this).inflate(R.layout.custom_alert_dialog_3, viewGroup, false);
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setView(dialogView);
-        AlertDialog alertDialog = builder.create();
+        alertDialog = builder.create();
         alertDialog.show();
 
 
@@ -68,7 +68,7 @@ public class i5_RenewApplicationActivity extends AppCompatActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setView(dialogView);
         AlertDialog alertDialog = builder.create();
-        alertDialog.show();
+         alertDialog.show();
     }
 
     public void jachai_korun5(View view) {
@@ -77,7 +77,7 @@ public class i5_RenewApplicationActivity extends AppCompatActivity {
         View dialogView = LayoutInflater.from(this).inflate(R.layout.custom_alert_dialog, viewGroup, false);
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setView(dialogView);
-        alertDialog = builder.create();
+        AlertDialog  alertDialog = builder.create();
         alertDialog.show();
 
     }
@@ -96,9 +96,9 @@ public class i5_RenewApplicationActivity extends AppCompatActivity {
 
     public void submitx(View view) {
 
-//        Button lenden = findViewById(R.id.lenden1);
-//        lenden.setVisibility(View.GONE);
-//        alertDialog.dismiss();
+        lenden = findViewById(R.id.lendenx5);
+        lenden.setVisibility(View.GONE);
+        alertDialog.dismiss();
 
     }
 }
