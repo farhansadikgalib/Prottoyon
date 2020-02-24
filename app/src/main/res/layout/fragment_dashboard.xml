@@ -48,14 +48,12 @@
                             android:id="@+id/Text_Number"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_centerInParent="true"
                             android:layout_marginLeft="20dp"
                             android:layout_marginTop="20dp"
                             android:fontFamily="@font/bengali"
                             android:text="৭৬"
-                            android:padding="5dp"
                             android:textColor="#FFFFFF"
-                            android:textSize="60sp"
+                            android:textSize="70sp"
                             android:textStyle="bold">
                         </TextView>
 
@@ -79,6 +77,7 @@
                             android:layout_centerHorizontal="true"
                             android:fontFamily="@font/bengali"
                             android:text="সাম্প্রতিক আবেদন"
+                            android:layout_marginLeft="5dp"
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />
 

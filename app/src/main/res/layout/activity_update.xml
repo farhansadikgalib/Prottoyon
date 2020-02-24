@@ -1179,11 +1179,11 @@
                             android:layout_marginTop="15dp"
                             android:layout_width="160dp"
                             android:layout_height="35dp"
-                            android:text="Hello"
+                            android:text="আপডেট করুন "
                             android:textColor="#ffffff"
                             android:background="#860DB2"
                             android:textStyle="bold"
-                            android:id="@+id/SubmitToUpdate"
+                            android:id="@+id/Update"
                             android:layout_gravity="center"
                             android:textSize="18sp"
                             >
