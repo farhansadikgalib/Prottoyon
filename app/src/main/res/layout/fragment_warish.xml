@@ -307,6 +307,11 @@
                         android:layout_marginBottom="20dp"
                         android:layout_marginTop="10dp"
                         android:background="#A39E96" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="15dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -538,12 +543,7 @@
 
                     </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:padding="16dp"
-                        >
+</LinearLayout>
 
 
 
@@ -775,7 +775,7 @@
 
                         </LinearLayout>
 
-                    </LinearLayout>
+
 
                 </LinearLayout>
 
