@@ -197,10 +197,15 @@
 
     </ScrollView>
 
+
+
+
+</LinearLayout>
+
     <LinearLayout
         android:id="@+id/viewInBottom"
         android:layout_width="match_parent"
-        android:layout_height="10dp"
+        android:layout_height="12dp"
         android:background="@color/colorPrimaryDark"
         android:layout_alignParentBottom="true"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -209,11 +214,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
 
         android:orientation="vertical" />
-
-
-</LinearLayout>
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
