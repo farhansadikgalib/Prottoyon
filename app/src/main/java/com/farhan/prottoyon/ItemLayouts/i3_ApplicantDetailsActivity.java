@@ -19,7 +19,7 @@ import com.farhan.prottoyon.Warish_class;
 
 public class i3_ApplicantDetailsActivity extends AppCompatActivity {
 
-    TextView appli_name, certificate_name;
+    TextView appli_name, certificate_name, NID_ID;
     Button lenden ;
     AlertDialog alertDialog;
     @Override

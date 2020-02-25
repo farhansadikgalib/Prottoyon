@@ -92,7 +92,7 @@ public class i1_Activity_Approved_Application_details extends AppCompatActivity 
         View dialogView = LayoutInflater.from(this).inflate(R.layout.custom_alert_dialog_3, viewGroup, false);
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setView(dialogView);
-       alertDialog = builder.create();
+        alertDialog = builder.create();
         alertDialog.show();
 
 
