@@ -10,6 +10,7 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import com.farhan.prottoyon.All_Item.Activity_Item1;
@@ -31,8 +32,8 @@ public class Dashboard extends Fragment implements  View.OnClickListener {
     }
 
     FrameLayout frameLayoutx;
-    RelativeLayout Item2,Item3,Item4,Item5,Item6;
-    LinearLayout Item1;
+    LinearLayout ItemId1,ItemId6;
+    CardView ItemId2,ItemId3,ItemId4,ItemId5;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
@@ -40,19 +41,19 @@ public class Dashboard extends Fragment implements  View.OnClickListener {
 
         frameLayoutx = view.findViewById(R.id.mainframeLayout);
 
-        Item1 = view.findViewById(R.id.ItemId1);
-        Item2 = view.findViewById(R.id.ItemId2);
-        Item3 = view.findViewById(R.id.ItemId3);
-        Item4 = view.findViewById(R.id.ItemId4);
-        Item5 = view.findViewById(R.id.ItemId5);
-        Item6 = view.findViewById(R.id.ItemId6);
+        ItemId1 = view.findViewById(R.id.ItemId1);
+        ItemId2 = view.findViewById(R.id.ItemId2);
+        ItemId3 = view.findViewById(R.id.ItemId3);
+        ItemId4 = view.findViewById(R.id.ItemId4);
+        ItemId5 = view.findViewById(R.id.ItemId5);
+        ItemId6 = view.findViewById(R.id.ItemId6);
 
-        Item1.setOnClickListener(this);
-        Item2.setOnClickListener(this);
-        Item3.setOnClickListener(this);
-        Item4.setOnClickListener(this);
-        Item5.setOnClickListener(this);
-        Item6.setOnClickListener(this);
+        ItemId1.setOnClickListener(this);
+        ItemId2.setOnClickListener(this);
+        ItemId3.setOnClickListener(this);
+        ItemId4.setOnClickListener(this);
+        ItemId5.setOnClickListener(this);
+        ItemId6.setOnClickListener(this);
         return view;
     }
 

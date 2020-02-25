@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,23 +9,23 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
         android:background="#ECECEC"
         android:orientation="vertical">
 
-        <RelativeLayout
+        <LinearLayout
             android:id="@+id/frameLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_margin="10dp"
+            android:orientation="vertical"
             android:background="#ECECEC"
             tools:context=".Dashboard">
 
             <LinearLayout
                 android:id="@+id/ItemId1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="130dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="10dp"
@@ -34,26 +35,24 @@
                 <RelativeLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
                     android:layout_weight="1">
 
 
                     <RelativeLayout
                         android:id="@+id/leniearId1"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
                         <TextView
                             android:id="@+id/Text_Number"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="20dp"
+                            android:layout_centerHorizontal="true"
                             android:fontFamily="@font/bengali"
                             android:text="৭৬"
                             android:textColor="#FFFFFF"
-                            android:textSize="70sp"
+                            android:textSize="40sp"
                             android:textStyle="bold">
                         </TextView>
 
@@ -61,13 +60,13 @@
                             android:id="@+id/Text_Number2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="60dp"
+                            android:layout_marginTop="20dp"
                             android:layout_toEndOf="@+id/Text_Number"
                             android:layout_toRightOf="@+id/Text_Number"
                             android:fontFamily="@font/bengali"
                             android:text="টি"
                             android:textColor="#FFFFFF"
-                            android:textSize="30sp"
+                            android:textSize="25sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -75,11 +74,12 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@+id/Text_Number"
                             android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="5dp"
                             android:fontFamily="@font/bengali"
                             android:text="সাম্প্রতিক আবেদন"
-                            android:layout_marginLeft="5dp"
                             android:textColor="@android:color/white"
-                            android:textSize="20sp" />
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
 
                     </RelativeLayout>
 
@@ -92,9 +92,9 @@
                     android:layout_weight="1">
 
                     <ImageView
-                        android:id="@+id/hader"
-                        android:layout_width="200dp"
-                        android:layout_height="200dp"
+                        android:id="@+id/Group"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
                         android:layout_centerInParent="true"
                         android:layout_margin="20dp"
                         android:src="@drawable/ic_group" />
@@ -105,431 +105,472 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="8dp"
-                android:orientation="vertical"
+                android:layout_height="wrap_content"
                 android:layout_below="@id/ItemId1"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:background="#710897" />
+                android:background="@android:color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bengali"
+                    android:text="অনুুমোদিত আবেদন"
+                    android:textColor="#710897"
+                    android:layout_gravity="center_horizontal"
+
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+
+
 
             <LinearLayout
                 android:id="@+id/Linear"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/ItemId1"
                 android:layout_marginTop="10dp"
                 android:background="#ECECEC"
                 android:weightSum="2">
 
-                <RelativeLayout
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="0dp"
                     android:id="@+id/ItemId2"
-                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
-                    android:background="#FFFFFF">
-
-                    <ImageView
-                        android:id="@+id/ImgViewId1"
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:layout_alignParentRight="true"
-                        android:layout_marginTop="8dp"
-                        android:layout_marginRight="10dp"
-                        android:src="@drawable/ic_leader_1">
-
-                    </ImageView>
+                    android:padding="10dp"
+                    app:cardElevation="5dp">
 
                     <LinearLayout
-                        android:id="@+id/leniearId111"
+
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/ImgViewId1"
-                        android:orientation="horizontal">
+                        android:layout_height="match_parent"
+                        android:background="#FFFFFF"
+                        android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/Text_Number11"
+                        <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:padding="5dp"
-                            android:gravity="center"
-                            android:layout_marginLeft="5dp"
-                            android:text="২৭৬"
-                            android:textColor="#710897"
-                            android:textSize="40sp"
-                            android:textStyle="bold">
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
 
-                        </TextView>
+                            <TextView
 
-                        <TextView
-                            android:id="@+id/Text_Number222"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="২৭৬"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                android:textColor="#710897"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="টি"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                android:textColor="#710897"
+
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                        <ImageView
+
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_leader_1">
+
+                        </ImageView>
+
+
+                        <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="টি"
-                            android:textColor="#710897"
-                            android:textSize="20sp"
-                            android:textStyle="bold" />
 
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/bengali"
+                                android:text="অনুুমোদিত আবেদন"
+                                android:textColor="#710897"
+
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
 
                     </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/leniearId111"
-                        android:background="#F2CDFF">
+                <androidx.cardview.widget.CardView
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
-                            android:fontFamily="@font/bengali"
-                            android:padding="3dp"
-                            android:text="অনুুমোদিত আবেদন"
-                            android:textColor="#710897"
-                            android:textSize="18sp"
-                            android:textStyle="bold" />
-
-
-                    </LinearLayout>
-
-                </RelativeLayout>
-
-                <RelativeLayout
+                    android:layout_width="0dp"
                     android:id="@+id/ItemId3"
-                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
-                    android:background="@android:color/white">
-
-                    <ImageView
-                        android:id="@+id/ImgViewId11"
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:layout_alignParentRight="true"
-                        android:layout_marginTop="8dp"
-                        android:layout_marginRight="10dp"
-                        android:src="@drawable/ic_search_2">
-
-                    </ImageView>
+                    android:padding="10dp"
+                    app:cardElevation="5dp">
 
                     <LinearLayout
-                        android:id="@+id/leniearId11"
+
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/ImgViewId11"
-                        android:orientation="horizontal">
+                        android:layout_height="match_parent"
+                        android:background="#FFFFFF"
+                        android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/Text11"
+                        <LinearLayout
+
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:padding="5dp"
-                            android:text="২৭৬"
-                            android:layout_marginLeft="5dp"
-                            android:textColor="#710897"
-                            android:textSize="40sp"
-                            android:textStyle="bold">
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="২৭৬"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                android:textColor="#710897"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="টি"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                android:textColor="#710897"
+                                android:textStyle="bold" />
 
 
-                        </TextView>
+                        </LinearLayout>
 
-                        <TextView
-                            android:id="@+id/Text22"
+                        <ImageView
+
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_leader_1">
+
+                        </ImageView>
+
+
+                        <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="টি"
-                            android:textColor="#710897"
-                            android:textSize="20sp"
-                            android:textStyle="bold" />
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="10dp">
 
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/bengali"
+                                android:text="অনুুমোদিত আবেদন"
+                                android:textColor="#710897"
+
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
 
                     </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/leniearId11"
-                        android:background="#F2CDFF">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
-                            android:padding="3dp"
-
-                            android:fontFamily="@font/bengali"
-                            android:text="বিবেচনাধীন আবেদন"
-                            android:textColor="#710897"
-                            android:textSize="18sp"
-                            android:textStyle="bold" />
-
-
-                    </LinearLayout>
-
-                </RelativeLayout>
 
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/yyy"
+                android:id="@+id/linearId2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/Linear"
                 android:background="#ECECEC"
                 android:weightSum="2">
 
-                <RelativeLayout
-                    android:id="@+id/ItemId4"
+                <androidx.cardview.widget.CardView
+
                     android:layout_width="0dp"
+                    android:id="@+id/ItemId4"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
-                    android:background="#FFFFFF">
-
-                    <ImageView
-                        android:id="@+id/ImgViewId2"
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:layout_alignParentRight="true"
-                        android:layout_marginTop="8dp"
-                        android:layout_marginRight="10dp"
-                        android:src="@drawable/ic_rejected_1">
-
-                    </ImageView>
+                    android:padding="10dp"
+                    app:cardElevation="5dp">
 
                     <LinearLayout
-                        android:id="@+id/leniearId2"
+
+                        android:layout_width="match_parent"
+
+                        android:layout_height="match_parent"
+
+
+                        android:background="#FFFFFF"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="২৭৬"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                android:textColor="#710897"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/Text_Number222"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="টি"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                android:textColor="#710897"
+
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                        <ImageView
+
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+
+
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_leader_1">
+
+                        </ImageView>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/bengali"
+                                android:text="অনুুমোদিত আবেদন"
+                                android:textColor="#710897"
+
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="0dp"
+                    android:id="@+id/ItemId5"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#FFFFFF"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="২৭৬"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                android:textColor="#710897"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="টি"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                android:textColor="#710897"
+
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                        <ImageView
+
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+
+
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_leader_1">
+
+                        </ImageView>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/bengali"
+                                android:text="অনুুমোদিত আবেদন"
+                                android:textColor="#710897"
+
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:id="@+id/ItemId6"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#990ACD"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+
+                    <RelativeLayout
+                        android:id="@+id/leniearId"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_below="@id/ImgViewId2"
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/Text_Number_2"
+                            android:id="@+id/Text_76"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:padding="5dp"
-                            android:text="২৭৬"
-                            android:textColor="#710897"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/bengali"
+                            android:text="৭৬"
+                            android:textColor="#FFFFFF"
                             android:textSize="40sp"
-                            android:layout_marginLeft="5dp"
                             android:textStyle="bold">
-
-
                         </TextView>
 
                         <TextView
                             android:id="@+id/Text_Number22"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_toEndOf="@+id/Text_76"
+                            android:layout_toRightOf="@+id/Text_76"
+                            android:fontFamily="@font/bengali"
                             android:text="টি"
-                            android:textColor="#710897"
-                            android:textSize="20sp"
+                            android:textColor="#FFFFFF"
+                            android:textSize="25sp"
                             android:textStyle="bold" />
-
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/leniearId2"
-                        android:background="#F2CDFF">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
+                            android:layout_below="@+id/Text_Number22"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="5dp"
                             android:fontFamily="@font/bengali"
-                            android:text="অননুমদিত আবেদন"
-                            android:padding="3dp"
-                            android:textColor="#710897"
-                            android:textSize="18sp"
+                            android:text="সাম্প্রতিক আবেদন"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp"
                             android:textStyle="bold" />
 
+                    </RelativeLayout>
 
-                    </LinearLayout>
 
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:id="@+id/ItemId5"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:layout_weight="1"
-                    android:background="#FFFFFF">
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
                     <ImageView
-                        android:id="@+id/ImgViewId"
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:layout_alignParentRight="true"
-                        android:layout_marginTop="8dp"
-                        android:layout_marginRight="10dp"
-                        android:src="@drawable/ic_work_1">
-
-                    </ImageView>
-
-                    <LinearLayout
-                        android:id="@+id/leniearId"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/ImgViewId"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/Text1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:padding="5dp"
-                            android:text="২৭৬"
-                            android:layout_marginLeft="5dp"
-                            android:textColor="#710897"
-                            android:textSize="40sp"
-                            android:textStyle="bold">
-
-
-                        </TextView>
-
-                        <TextView
-                            android:id="@+id/Text2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="টি"
-                            android:textColor="#710897"
-                            android:textSize="20sp"
-                            android:textStyle="bold" />
-
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/leniearId"
-                        android:background="#F2CDFF">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
-                            android:fontFamily="@font/bengali"
-                            android:text="পুনরায় জমা আবেদন"
-                            android:padding="3dp"
-                            android:textColor="#710897"
-                            android:textSize="18sp"
-                            android:textStyle="bold" />
-
-
-                    </LinearLayout>
-
+                        android:id="@+id/EndTime"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="20dp"
+                        android:src="@drawable/ic_group" />
                 </RelativeLayout>
 
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/last"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/yyy"
-                android:background="#ECECEC"
-                android:weightSum="2">
-
-                <RelativeLayout
-                    android:id="@+id/ItemId6"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_weight="1"
-                    android:background="#FFFFFF">
-
-                    <ImageView
-                        android:id="@+id/ImgViewId233"
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:layout_alignParentRight="true"
-                        android:layout_marginTop="8dp"
-                        android:layout_marginRight="10dp"
-                        android:src="@drawable/ic_no_1">
-
-                    </ImageView>
-
-                    <LinearLayout
-                        android:id="@+id/leniearId233"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/ImgViewId233"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/Text_Number_233"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:padding="5dp"
-                            android:text="২৭৬"
-                            android:layout_marginLeft="5dp"
-                            android:textColor="#710897"
-                            android:textSize="40sp"
-                            android:textStyle="bold">
-
-
-                        </TextView>
-
-                        <TextView
-                            android:id="@+id/Text_Number2233"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="টি"
-                            android:textColor="#710897"
-                            android:textSize="20sp"
-                            android:textStyle="bold" />
-
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/leniearId233"
-                        android:background="#F2CDFF">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
-                            android:fontFamily="@font/bengali"
-                            android:text=" সময় শেষ"
-                            android:padding="3dp"
-                            android:textColor="#710897"
-                            android:textSize="18sp"
-                            android:textStyle="bold" />
-
-
-                    </LinearLayout>
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:id="@+id/ItemI"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_weight="1"
-                    android:background="#FFFFFF">
-
-
-                </RelativeLayout>
 
             </LinearLayout>
 
 
 
-        </RelativeLayout>
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -540,21 +581,22 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:src="@drawable/banner">
+
             </ImageView>
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="8dp"
-            android:background="@color/colorPrimary"
             android:layout_gravity="bottom"
+            android:background="@color/colorPrimary"
             android:orientation="vertical">
 
 
         </LinearLayout>
 
     </LinearLayout>
-
 
 
 </ScrollView>

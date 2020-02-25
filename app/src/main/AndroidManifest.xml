@@ -9,7 +9,10 @@
         android:roundIcon="@drawable/round_logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Update"></activity>
+        <activity android:name=".PracticeActivity">
+
+        </activity>
+        <activity android:name=".Update" />
         <activity android:name=".ItemLayouts.i6_TimeOverActivity" />
         <activity android:name=".ItemLayouts.i5_RenewApplicationActivity" />
         <activity android:name=".ItemLayouts.i2_Application_Details_Activity_2" />
@@ -29,6 +32,7 @@
         <activity
             android:name=".SplashScreen"
             android:theme="@style/SplashTheme">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
