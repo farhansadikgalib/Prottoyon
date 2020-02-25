@@ -123,7 +123,7 @@
                         </LinearLayout>
 
                         <TextView
-                            android:id="@+id/textView3"
+                            android:id="@+id/nationalUP_ID"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
