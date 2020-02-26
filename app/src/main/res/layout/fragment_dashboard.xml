@@ -109,7 +109,7 @@
         android:background="#FFFFFF"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
-        android:gravity="center_horizontal"
+        android:gravity="center"
 
 
         android:textSize="20sp"
@@ -525,7 +525,7 @@
                     android:id="@+id/Text_76"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="25dp"
+                    android:layout_marginLeft="20sp"
                     android:fontFamily="@font/bengali"
                     android:text="৭৬"
                     android:textColor="#EC0000"
