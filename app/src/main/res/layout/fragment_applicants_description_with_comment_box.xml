@@ -143,7 +143,10 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="16dp"
+
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:background="#FFFFFF">
 
                 <LinearLayout
@@ -401,7 +404,10 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="16dp"
+
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:background="#FFFFFF">
 
                 <LinearLayout
@@ -1149,7 +1155,10 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
             android:background="#FFFFFF">
 
         <LinearLayout
@@ -1185,14 +1194,15 @@
                 android:paddingLeft="15dp"
                 android:paddingTop="5dp"
                 android:paddingRight="15dp"
-                android:paddingBottom="35dp"
+                android:paddingBottom="130dp"
                 android:text="আবেদনকারী সঠিক তথ্য প্রধান "
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textColor="#403C3C" />
 
 
                 <Button
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="10dp"
                     android:layout_width="160dp"
                     android:layout_height="35dp"
                     android:text="সাবমিট"

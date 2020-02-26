@@ -2,12 +2,15 @@ package com.farhan.prottoyon;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -19,7 +22,9 @@ import com.farhan.prottoyon.ItemLayouts.i1_Activity_Approved_Application_details
 public class App_Des_with_CommentBox extends AppCompatActivity {
     Button submit;
     TextView NID;
-    AlertDialog alertDialog;
+
+     Dialog dialog;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,7 +36,8 @@ public class App_Des_with_CommentBox extends AppCompatActivity {
         NID.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showCustomDialog();
+                showCustomDialog(App_Des_with_CommentBox.this);
+
             }
         });
 
@@ -58,12 +64,40 @@ public class App_Des_with_CommentBox extends AppCompatActivity {
 
 
 
-    private void showCustomDialog() {
-        ViewGroup viewGroup = findViewById(android.R.id.content);
-        View dialogView = LayoutInflater.from(this).inflate(R.layout.activity_national, viewGroup, false);
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setView(dialogView);
-        AlertDialog alertDialog = builder.create();
-        alertDialog.show();
+    public void showCustomDialog(Activity activity) {
+//        ViewGroup viewGroup = findViewById(android.R.id.content);
+//        View dialogView = LayoutInflater.from(this).inflate(R.layout.activity_national, viewGroup, false);
+//        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+//        builder.setView(dialogView);
+//        AlertDialog alertDialog = builder.create();
+//        alertDialog.show();
+//        alertDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+//        alertDialog.setCancelable(false);
+
+
+        final Dialog dialog = new Dialog(activity, android.R.style.Theme_Translucent_NoTitleBar_Fullscreen);
+        dialog.setCancelable(true);
+        dialog.setContentView(R.layout.activity_national);
+
+        ImageView imageView =  dialog.findViewById(R.id.crossID);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
+
+
+//        Button dialogButton1 = (Button) dialog.findViewById(R.id.btn1);
+//        dialogButton1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                dialog.dismiss();
+//            }
+//        });
+
+
+        dialog.show();
+
     }
 }
