@@ -66,7 +66,7 @@ public class i3_ApplicantDetailsActivity extends AppCompatActivity {
         View dialogView = LayoutInflater.from(this).inflate(R.layout.custom_alert_dialog_3, viewGroup, false);
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setView(dialogView);
-        AlertDialog alertDialog = builder.create();
+        alertDialog = builder.create();
         alertDialog.show();
 
 
@@ -79,7 +79,7 @@ public class i3_ApplicantDetailsActivity extends AppCompatActivity {
         View dialogView = LayoutInflater.from(this).inflate(R.layout.custom_alert_dialog, viewGroup, false);
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setView(dialogView);
-        AlertDialog alertDialog = builder.create();
+        alertDialog = builder.create();
         alertDialog.show();
 
 
@@ -102,9 +102,6 @@ public class i3_ApplicantDetailsActivity extends AppCompatActivity {
         finish();
     }
 
-    public void reject(View view) {
-        finish();
-    }
 
     public void submit(View view) {
         finish();
@@ -120,4 +117,19 @@ public class i3_ApplicantDetailsActivity extends AppCompatActivity {
     }
 
 
+    public void Cross(View view) {
+
+        alertDialog.dismiss();
+
+    }
+
+    public void crossx(View view) {
+        alertDialog.dismiss();
+    }
+
+    public void crossM(View view) {
+
+        alertDialog.dismiss();
+
+    }
 }

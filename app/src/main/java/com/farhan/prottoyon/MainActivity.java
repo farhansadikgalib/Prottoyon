@@ -8,12 +8,19 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
 
+import com.farhan.prottoyon.All_Item.Activity_Item1;
+import com.farhan.prottoyon.All_Item.Activity_Item3;
+import com.farhan.prottoyon.All_Item.Activity_Item4;
+import com.farhan.prottoyon.All_Item.Activity_Item5;
+import com.farhan.prottoyon.All_Item.Activity_Item6;
+import com.farhan.prottoyon.All_Item.Activity_item2;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -23,6 +30,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     ActionBarDrawerToggle toggle;
     FrameLayout frameLayout;
 
+    @SuppressLint("RestrictedApi")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,6 +67,39 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         return false;
     }
 
+    public void recentApplication(View view) {
+        startActivity(new Intent(this, Activity_Item1.class));
+
+    }
+
+    public void approvedApplication(View view) {
+
+        startActivity(new Intent(this, Activity_item2.class));
+
+    }
+    public void underConsiderationApplication(View view) {
+
+        startActivity(new Intent(this, Activity_Item3.class));
+
+
+    }
+    public void UnApprovedApplication(View view) {
+
+        startActivity(new Intent(this, Activity_Item4.class));
+
+
+    }
+    public void reAppliedApplication(View view) {
+
+        startActivity(new Intent(this, Activity_Item5.class));
+
+    }
+    public void timeOver(View view) {
+
+        startActivity(new Intent(this, Activity_Item6.class));
+
+
+    }
     public void logout(View view) {
 
 
@@ -68,4 +109,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
 
     }
+
+
+
+
+
+
+
+
+
+
+
 }
