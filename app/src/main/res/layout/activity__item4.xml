@@ -38,7 +38,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="অনুুমোদিত আবেদন"
+                android:text="অননুমোদিত আবেদন"
                 android:gravity="center"
                 android:fontFamily="@font/bengali"
                 android:textSize="22dp"
@@ -74,10 +74,9 @@
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
         android:id="@+id/recyclerView4"
-        />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 
 </LinearLayout>

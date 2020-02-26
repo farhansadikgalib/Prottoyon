@@ -50,6 +50,7 @@
             android:background="#EBECE9"
             android:textAlignment="viewStart"
             android:inputType="text"
+            android:hint="আবেদকারী ভুল পরিচয়পত্র প্রদান করেছেন ।"
             android:gravity="start" />
 
 

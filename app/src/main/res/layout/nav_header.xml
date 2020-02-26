@@ -130,8 +130,6 @@
         android:layout_gravity="center"
         android:orientation="vertical"
         android:background="@color/colorPrimary"
-        android:layout_marginTop="10dp"
-
        >
 
 
@@ -141,17 +139,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="10dp"
             android:gravity="left">
 
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text=" সাম্প্রতিক আবেদন  "
                 android:layout_marginLeft="20dp"
                 android:textSize="20dp"
-                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
                 android:textStyle="bold"
                 android:onClick="recentApplication"
                 android:fontFamily="@font/bengali"
@@ -171,18 +169,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="10dp"
             android:gravity="left">
 
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="অনুমোদিত আবেদন"
                 android:layout_marginLeft="20dp"
-                android:layout_marginBottom="20dp"
-
-                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"                android:textSize="20dp"
                 android:textStyle="bold"
                 android:onClick="approvedApplication"
                 android:fontFamily="@font/bengali"
@@ -202,19 +198,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="10dp"
             android:gravity="left">
 
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:fontFamily="@font/bengali"
                 android:onClick="underConsiderationApplication"
                 android:text="বিবেচনাধীন আবেদন"
-                android:layout_marginBottom="20dp"
-
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
                 android:textColor="#FFFFFF"
                 android:textSize="20dp"
                 android:textStyle="bold" />
@@ -231,19 +226,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="10dp"
             android:gravity="left">
 
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="অননুমোদিত আবেদন   "
                 android:textSize="20dp"
                 android:layout_marginLeft="20dp"
                 android:textStyle="bold"
-                android:layout_marginBottom="20dp"
-                android:onClick="UnApprovedApplication"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"                android:onClick="UnApprovedApplication"
                 android:fontFamily="@font/bengali"
                 android:textColor="#FFFFFF"
                 />
@@ -261,18 +255,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="10dp"
             android:gravity="left">
 
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="পুনরায় জমা আবেদন   "
                 android:textSize="20dp"
-                android:layout_marginBottom="20dp"
                 android:layout_marginLeft="20dp"
                 android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
                 android:onClick="reAppliedApplication"
                 android:fontFamily="@font/bengali"
                 android:textColor="#FFFFFF"
@@ -291,17 +285,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="10dp"
             android:gravity="left">
 
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="সময় শেষ   "
                 android:textSize="20dp"
-                android:layout_marginBottom="20dp"
-                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"                android:layout_marginLeft="20dp"
                 android:textStyle="bold"
                 android:onClick="timeOver"
                 android:fontFamily="@font/bengali"
@@ -313,23 +306,21 @@
                 android:layout_height="1dp"
                 android:background="#FFFFFF"/>
 
-
-
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="10dp"
             android:gravity="left">
 
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="লগ আউট   "
                 android:textSize="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginLeft="20dp"
                 android:textStyle="bold"
                 android:onClick="logout"

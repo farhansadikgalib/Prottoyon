@@ -4,7 +4,6 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-
     android:layout_marginLeft="25dp"
     android:layout_marginRight="25dp"
     android:layout_marginTop="10dp"
@@ -29,7 +28,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_weight="1">
+              >
 
 
                 <TextView
@@ -38,7 +37,6 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="আব্দুল হালিম"
-                    android:textAlignment="center"
                     android:textColor="#131212"
                     android:textSize="20dp" />
 
@@ -50,7 +48,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textAlignment="center"
                     android:text="উত্তরাধিকার সনদ"
                     android:textColor="#067CAF"
                     android:textSize="16dp"
