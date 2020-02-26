@@ -18,7 +18,7 @@ import com.farhan.prottoyon.Warish_class;
 
 public class i4_Activity_Reject_Details extends AppCompatActivity {
     TextView appli_name, certificate_name;
-
+    AlertDialog alertDialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,9 +64,13 @@ public class i4_Activity_Reject_Details extends AppCompatActivity {
         View dialogView = LayoutInflater.from(this).inflate(R.layout.custom_alert_dialog_4, viewGroup, false);
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setView(dialogView);
-        AlertDialog alertDialog = builder.create();
+        alertDialog = builder.create();
         alertDialog.show();
 
 
+    }
+
+    public void crossY(View view) {
+        alertDialog.dismiss();
     }
 }

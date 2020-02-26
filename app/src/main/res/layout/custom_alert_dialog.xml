@@ -4,18 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_gravity="center"
     android:background="#FFFFFF"
-    android:gravity="center"
+    android:layout_margin="20dp"
     android:orientation="vertical">
 
     <TextView
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginRight="5dp"
+        android:padding="5dp"
+        android:onClick="Cross"
+        android:drawableRight="@drawable/ic_cross"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:fontFamily="@font/bengali"
+        />
+
+
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center"
-        android:layout_marginTop="95dp"
-        android:layout_marginBottom="75dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="40dp"
         android:text="আপনি কি যাচাই করতে চান ?"
         android:textSize="20dp"
         android:textColor="#000000"
@@ -23,19 +39,22 @@
         android:fontFamily="@font/bengali"
         />
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         >
 
 
         <Button
-            android:layout_width="100dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:background="@drawable/button_background"
             android:text="নিশ্চিত করুন"
+            android:layout_centerInParent="true"
             android:onClick="accecpt"
+            android:textStyle="bold"
             android:fontFamily="@font/bengali"
             android:layout_margin="20dp"
             android:textColor="#ffffff" />
@@ -44,20 +63,10 @@
 
 
 
-        <Button
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:background="@drawable/button_bg_2"
-            android:layout_margin="20dp"
-            android:onClick="reject"
-            android:fontFamily="@font/bengali"
-            android:text="বাতিল করুন"
-            android:textColor="#860DB2" />
 
 
 
-    </RelativeLayout>
+    </LinearLayout>
 
 
 </LinearLayout>

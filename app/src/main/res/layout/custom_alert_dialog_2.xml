@@ -17,6 +17,7 @@
         android:drawableRight="@drawable/ic_cross"
         android:text="প্রত্যাখানের কারণ"
         android:textSize="20dp"
+        android:onClick="crossM"
         android:layout_marginTop="10dp"
         android:textColor="#000000"
         android:fontFamily="@font/bengali"

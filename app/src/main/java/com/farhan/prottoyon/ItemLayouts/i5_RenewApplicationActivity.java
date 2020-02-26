@@ -67,7 +67,7 @@ public class i5_RenewApplicationActivity extends AppCompatActivity {
         View dialogView = LayoutInflater.from(this).inflate(R.layout.custom_alert_dialog_4, viewGroup, false);
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setView(dialogView);
-        AlertDialog alertDialog = builder.create();
+         alertDialog = builder.create();
          alertDialog.show();
     }
 
@@ -77,7 +77,7 @@ public class i5_RenewApplicationActivity extends AppCompatActivity {
         View dialogView = LayoutInflater.from(this).inflate(R.layout.custom_alert_dialog, viewGroup, false);
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setView(dialogView);
-        AlertDialog  alertDialog = builder.create();
+        alertDialog = builder.create();
         alertDialog.show();
 
     }
@@ -98,6 +98,29 @@ public class i5_RenewApplicationActivity extends AppCompatActivity {
 
         lenden = findViewById(R.id.lendenx5);
         lenden.setVisibility(View.GONE);
+        alertDialog.dismiss();
+
+    }
+
+
+    public void Cross(View view) {
+
+        alertDialog.dismiss();
+
+    }
+
+    public void crossx(View view) {
+        alertDialog.dismiss();
+    }
+
+    public void crossM(View view) {
+
+        alertDialog.dismiss();
+
+    }
+
+    public void crossY(View view) {
+
         alertDialog.dismiss();
 
     }
