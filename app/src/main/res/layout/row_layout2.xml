@@ -4,10 +4,10 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-
     android:layout_marginLeft="25dp"
     android:layout_marginRight="25dp"
     android:layout_marginTop="5dp"
+    android:padding="5dp"
     android:layout_marginBottom="5dp"
     >
 
@@ -21,15 +21,16 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:padding="10dp"
+            android:weightSum="5"
             android:layout_height="wrap_content">
 
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_weight="2"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_weight="1">
+                >
 
 
                 <TextView
@@ -38,7 +39,6 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="আব্দুল হালিম"
-                    android:textAlignment="center"
                     android:textColor="#131212"
                     android:textSize="20dp" />
 
@@ -50,7 +50,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textAlignment="center"
                     android:text="উত্তরাধিকার সনদ"
                     android:textColor="#067CAF"
                     android:textSize="16dp"
@@ -63,33 +62,77 @@
 
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
+
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:layout_weight="1"
+                android:layout_weight="3"
                 android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/datTV"
-                    android:layout_gravity="end"
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/bengali"
-                    android:text="প্রতিশ্রুত তারিখঃ"
-                    android:textSize="14dp"
-                    />
+                    android:orientation="horizontal">
 
 
-                <TextView
-                    android:id="@+id/applicansIdTV"
-                    android:layout_width="wrap_content"
+
+
+                    <TextView
+                        android:id="@+id/datTV"
+                        android:layout_gravity="end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bengali"
+                        android:text="আবেদনের তাঃ"
+                        android:textSize="14dp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/dateTV"
+                        android:textColor="@color/red"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bengali"
+                        android:text="১২/১২/২০১৯"
+                        android:textSize="14dp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/bengali"
-                    android:layout_gravity="end"
-                    android:textAlignment="textEnd"
-                    android:text="আবেদন আইডিঃ"
-                    android:textSize="14dp"
-                    tools:ignore="RtlCompat" />
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+
+
+                    <TextView
+                        android:id="@+id/applicansIdTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bengali"
+                        android:layout_gravity="end"
+                        android:textAlignment="textEnd"
+                        android:text="আবেদন আইডিঃ"
+                        android:textSize="14dp"
+                        tools:ignore="RtlCompat" />
+
+
+                    <TextView
+                        android:id="@+id/applicantsIdTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/bengali"
+                        android:text="১২৩৬৫৪৭৯৫"
+                        android:textSize="14dp"
+                        />
+
+
+
+                </LinearLayout>
+
+
 
 
 
@@ -97,33 +140,12 @@
 
 
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginLeft="5dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/dateTV"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/bengali"
-                    android:text="১২/১২/২০১৯"
-                    android:textColor="#FF0000"
-                    android:textSize="14dp"/>
 
 
-                <TextView
-                    android:id="@+id/applicantsIdTV"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:fontFamily="@font/bengali"
-                    android:text="১২৩৬৫৪৭৯৫"
-                    android:textSize="14dp"
-                    />
 
-            </LinearLayout>
+
+
+
 
         </LinearLayout>
 
