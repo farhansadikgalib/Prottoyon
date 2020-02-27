@@ -28,7 +28,7 @@
                 android:fontFamily="@font/bengali"
                 android:gravity="center"
                 android:text="প্রত্যায়ন"
-                android:layout_marginRight="25dp"
+                android:layout_marginRight="60dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textColor="#710897"
                 android:textStyle="bold" />
